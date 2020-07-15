@@ -15,8 +15,9 @@ These are my notes / ramblings:
 1. [What I want](./docs/notes/what-i-want.md)
 2. [Functions](./docs/notes/functions.md)
 3. [Type system](./docs/notes/type-system.md)
-4. [Ranges](./docs/notes/ranges.md)
-5. [Grammar](./docs/notes/grammar.md)
+4. [Strings](./docs/notes/strings.md)
+5. [Ranges](./docs/notes/ranges.md)
+6. [Grammar](./docs/notes/grammar.md)
 
 # Building
 
