@@ -19,7 +19,8 @@ These are my notes / ramblings:
 5. [Ranges](./docs/notes/ranges.md)
 6. [Arrays](./docs/notes/arrays.md)
 7. [Reference types](./docs/notes/reference-types.md)
-8. [Grammar](./docs/notes/grammar.md)
+8. [Lexer Grammar](./src/ExperimentalLexer.g4)
+9. [Parser Grammar](./src/ExperimentalParser.g4)
 
 # Building
 
