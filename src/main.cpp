@@ -13,7 +13,7 @@ int main(int, char**) {
 
     std::cout << "Start of parsing..." << std::endl << std::endl;
 
-    std::cout << tree->toStringTree(&parser) << std::endl << std::endl;
+    std::cout << tree->toStringTree(&parser, true) << std::endl << std::endl;
 
     std::cout << "\nEnd of parsing!\n";
 }
