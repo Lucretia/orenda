@@ -25,8 +25,13 @@ These are my notes / ramblings:
 # Building
 
 ```bash
-$ cmake
+$ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 ```
+
+## Requirements
+
+* A C++14 compiler.
+* ANTLR4 (4.8-complete.jar)
 
 ## Tested with
 
