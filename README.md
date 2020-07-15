@@ -17,8 +17,9 @@ These are my notes / ramblings:
 3. [Type system](./docs/notes/type-system.md)
 4. [Strings](./docs/notes/strings.md)
 5. [Ranges](./docs/notes/ranges.md)
-6. [Reference types](./docs/notes/reference-types.md)
-7. [Grammar](./docs/notes/grammar.md)
+6. [Arrays](./docs/notes/arrays.md)
+7. [Reference types](./docs/notes/reference-types.md)
+8. [Grammar](./docs/notes/grammar.md)
 
 # Building
 
