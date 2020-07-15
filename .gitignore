@@ -10,3 +10,6 @@
 build
 .ionide
 .vscode
+.metals
+CMakeFiles
+thirdparty
