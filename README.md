@@ -14,7 +14,8 @@ These are my notes / ramblings:
 
 1. [What I want](./docs/notes/what-i-want.md)
 2. [Functions](./docs/notes/functions.md)
-3. [Grammar](./docs/notes/grammar.md)
+3. [Type system](./docs/notes/type-system.md)
+4. [Grammar](./docs/notes/grammar.md)
 
 # Building
 
