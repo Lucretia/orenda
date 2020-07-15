@@ -37,4 +37,4 @@ Copyright (C) 2020 by Luke A. Guest
 
 # Licence
 
-MPL 2.0
+[MPL 2.0](./LICENCE.txt)
