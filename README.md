@@ -18,8 +18,6 @@ These are my notes / ramblings:
 
 # Building
 
-TODO: Add instructions to build the thing.
-
 ```bash
 $ cmake
 ```
