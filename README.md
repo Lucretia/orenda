@@ -1,4 +1,4 @@
-# An expoerimental language
+# An experimental language
 
 My attempt at creating a new programming language a bit at a time by experimenting with various ideas.
 
