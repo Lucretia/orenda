@@ -1,0 +1,12 @@
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.o
+*.obj
+*.lst
+build
+.ionide
+.vscode
