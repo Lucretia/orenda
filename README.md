@@ -31,7 +31,7 @@ $ cmake
 
 # Contributions
 
-I'm not accepting any contributions.
+I'm not accepting any PR's but I am happy to take advice, ideas or suggestions.
 
 # Copyright
 
