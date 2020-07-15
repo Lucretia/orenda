@@ -4,23 +4,44 @@ options {
     tokenVocab = ExperimentalLexer;
 }
 
-startRule       :   program EOF
-                ;
+unit                    :   (main_function | module+) EOF ;
 
-// There might be multiple new lines for "formatting" purposes at the start of the file.
-program         :   NEW_LINE* function_decl
-                ;
+main_function           :   import_list
+                            function ;
 
-function_decl   :   FUNCTION ID IS NEW_LINE statements END ID? NEW_LINE
-                ;
+function                :   FUNCTION ID parameters? IS NEW_LINE
+                                statement_sequence
+                            END FUNCTION ID NEW_LINE ;
 
-statements      :   return_stmt NEW_LINE
-                |   NEW_LINE
-                ;
+parameters              :   LEFT_PAREN RIGHT_PAREN ;
 
-return_stmt     :   RETURN expr ;
+function_list           :   function NEW_LINE (function NEW_LINE)* ;
 
-// Allow expressions to be split over lines, but only after the operator.
-expr            :   numeric_literal PLUS NEW_LINE* numeric_literal ;
+module                  :   import_list
+                            MODULE ID IS NEW_LINE
+                                function_list
+                            END MODULE ID NEW_LINE ;
 
-numeric_literal :   DECIMAL_LITERAL | BASED_LITERAL ;
+import_list             :   (import_clause NEW_LINE)* ;
+
+import_clause           :   IMPORT ID (COMMA ID)? NEW_LINE ;
+
+statement_sequence      :   (statement NEW_LINE)+ ;
+
+statement               :   (
+                            type_statement
+                        |   variable_decl
+                        |   assignment_statement
+                        ) ;
+
+type_statement          :   TYPE ID IS range_type ;
+
+assignment_statement    :   ID EQUALS expr ;
+
+range_type              :   DECIMAL_LITERAL DIARESIS DECIMAL_LITERAL ;
+
+variable_decl           :   VAR COLON ID EQUALS expr ;
+
+expr                    :   DECIMAL_LITERAL ;
+
+types                   :   ID ;
