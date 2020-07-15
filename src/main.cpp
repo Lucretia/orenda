@@ -9,7 +9,7 @@ int main(int, char**) {
     compiler::ExperimentalLexer lexer(&inputStream);
     antlr4::CommonTokenStream tokens(&lexer);
     compiler::ExperimentalParser parser(&tokens);
-    antlr4::tree::ParseTree *tree = parser.startRule();
+    antlr4::tree::ParseTree *tree = parser.unit();
 
     std::cout << "Start of parsing..." << std::endl << std::endl;
 
