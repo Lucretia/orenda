@@ -44,6 +44,14 @@ a[x1, x2 .. y1, y2] = b[x3, x4 .. y3, y4]
 
 ```
 
+What if we do this?
+
+```
+a = b[x3, x4 .. y3, y4]
+```
+
+What do this do? Create a new matrix a with the values copied from b.
+
 ## Memory layout
 
 * Column major
