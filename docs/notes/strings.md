@@ -1,6 +1,10 @@
 ## Strings
 
 * Unicode.
+  + No such thing as a character anymore, only code points, but what should the data type be called?
+    - ```code_point```?
+    - ```character```?
+    - ```rune```?
 * Based on arrays in the language.
   + Enables slicing.
 * UTF-8.
