@@ -13,3 +13,4 @@ build
 .metals
 CMakeFiles
 thirdparty
+CMakeCache.txt
