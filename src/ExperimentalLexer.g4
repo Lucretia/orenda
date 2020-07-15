@@ -104,6 +104,11 @@ SEMICOLON   :   ';' ;
 DOT         :   '.' ;
 UNDERSCORE  :   '_' ;
 TYPE_QUERY  :   '?' ;
+LEFT_PAREN  :   '(' ;
+RIGHT_PAREN :   ')' ;
+COMMA       :   ',' ;
+EQUALS      :   '=' ;
+DIARESIS    :   '..' ;
 
 NEW_LINE    :   '\r'? '\n' ; //-> channel(WHITESPACE);
 //NL          :   '\r'? '\n' -> skip;
