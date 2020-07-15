@@ -103,6 +103,7 @@ COLON       :   ':' ;
 SEMICOLON   :   ';' ;
 DOT         :   '.' ;
 UNDERSCORE  :   '_' ;
+TYPE_QUERY  :   '?' ;
 
 NEW_LINE    :   '\r'? '\n' ; //-> channel(WHITESPACE);
 //NL          :   '\r'? '\n' -> skip;
