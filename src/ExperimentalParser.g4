@@ -32,11 +32,14 @@ statement               :   (
                             type_statement
                         |   variable_decl
                         |   assignment_statement
+                        |   return_statement
                         ) ;
 
 type_statement          :   TYPE ID IS range_type ;
 
 assignment_statement    :   ID EQUALS expr ;
+
+return_statement        :   RETURN expr ;
 
 range_type              :   DECIMAL_LITERAL DIARESIS DECIMAL_LITERAL ;
 
