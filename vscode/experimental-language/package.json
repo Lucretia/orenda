@@ -1,0 +1,25 @@
+{
+    "name": "experimental-language",
+    "displayName": "Experimental Language",
+    "description": "Syntax highlighting for experimental Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "experimental",
+            "aliases": ["Experimental", "experimental"],
+            "extensions": [".exp",".exm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "experimental",
+            "scopeName": "source.experimental",
+            "path": "./syntaxes/experimental.tmLanguage.json"
+        }]
+    }
+}
