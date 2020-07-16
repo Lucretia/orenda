@@ -40,6 +40,8 @@ assignment_statement    :   ID EQUALS expr ;
 
 range_type              :   DECIMAL_LITERAL DIARESIS DECIMAL_LITERAL ;
 
+// TODO: Fix this var weirdness. Not sure what my original idea was exactly
+//       var <type> : ID = expr?
 variable_decl           :   VAR COLON ID EQUALS expr ;
 
 expr                    :   term PLUS expr
