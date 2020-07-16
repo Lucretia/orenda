@@ -112,6 +112,6 @@ DIARESIS    :   '..' ;
 
 NL          :   '\n' | '\r' '\n' ;
 
-WS          :   [ \t]+ -> channel(WHITESPACE) ;
+WS          :   [ \t\f]+ -> channel(WHITESPACE) ;
 
 COMMENT     :   '//' ~[\r\n]* -> channel(COMMENTS) ;
