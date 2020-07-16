@@ -6,27 +6,27 @@ options {
 
 unit                    :   (main_function | module+) EOF ;
 
-main_function           :   import_list
-                            function ;
+main_function           :   NL* import_list
+                            function_decl ;
 
-function                :   FUNCTION ID parameters? IS NEW_LINE
+function_decl           :   NL* FUNCTION ID parameters? IS NL*
                                 statement_sequence
-                            END FUNCTION ID NEW_LINE ;
+                            END FUNCTION ID ;
 
 parameters              :   LEFT_PAREN RIGHT_PAREN ;
 
-function_list           :   function NEW_LINE (function NEW_LINE)* ;
+function_list           :   function_decl+ ;
 
 module                  :   import_list
-                            MODULE ID IS NEW_LINE
+                            NL* MODULE ID IS NL*
                                 function_list
-                            END MODULE ID NEW_LINE ;
+                            NL* END MODULE ID NL* ;
 
-import_list             :   (import_clause NEW_LINE)* ;
+import_list             :   import_clause* ;
 
-import_clause           :   IMPORT ID (COMMA ID)? NEW_LINE ;
+import_clause           :   NL* IMPORT ID (COMMA ID)? ;
 
-statement_sequence      :   (statement NEW_LINE)+ ;
+statement_sequence      :   (statement NL*)* ;
 
 statement               :   (
                             type_statement
