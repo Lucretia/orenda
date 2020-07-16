@@ -4,7 +4,7 @@ options {
     tokenVocab = ExperimentalLexer;
 }
 
-unit                    :   (main_function | module+) EOF ;
+unit                    :   (main_function | module+) NL* EOF ;
 
 main_function           :   NL* import_list
                             function_decl ;
