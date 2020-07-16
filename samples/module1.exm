@@ -1,0 +1,9 @@
+module a is
+    function a is
+        type b is 1 .. 2
+    end function a
+
+
+    function b is
+    end function b
+end module a

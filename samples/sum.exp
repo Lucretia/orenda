@@ -1,0 +1,3 @@
+function sum is
+    return 5 + 2
+end function sum
