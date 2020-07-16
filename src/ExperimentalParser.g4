@@ -42,6 +42,15 @@ range_type              :   DECIMAL_LITERAL DIARESIS DECIMAL_LITERAL ;
 
 variable_decl           :   VAR COLON ID EQUALS expr ;
 
-expr                    :   DECIMAL_LITERAL ;
+expr                    :   term PLUS expr
+                        |   term MINUS expr
+                        |   term ;
+
+term                    :   factor TIMES term
+                        |   factor DIVIDE term
+                        |   factor ;
+
+factor                  :   LEFT_PAREN expr RIGHT_PAREN
+                        |   DECIMAL_LITERAL ;
 
 types                   :   ID ;
