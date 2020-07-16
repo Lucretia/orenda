@@ -110,8 +110,7 @@ COMMA       :   ',' ;
 EQUALS      :   '=' ;
 DIARESIS    :   '..' ;
 
-NEW_LINE    :   '\r'? '\n' ; //-> channel(WHITESPACE);
-//NL          :   '\r'? '\n' -> skip;
+NL          :   '\n' | '\r' '\n' ;
 
 WS          :   [ \t]+ -> channel(WHITESPACE) ;
 
