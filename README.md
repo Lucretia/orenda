@@ -38,6 +38,10 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 * Clang 10.
 * GCC 9.3.0
 
+## [Current version](http://www.semver.org)
+
+v0.0.31
+
 # Contributions
 
 I'm not accepting any PR's but I am happy to take advice, ideas or suggestions.
