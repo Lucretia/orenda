@@ -41,7 +41,7 @@ assignment_statement    :   ID EQUALS expr ;
 
 return_statement        :   RETURN expr ;
 
-range_type              :   DECIMAL_LITERAL DIARESIS DECIMAL_LITERAL ;
+range_type              :   numeric_literals DIARESIS numeric_literals ;
 
 // TODO: Fix this var weirdness. Not sure what my original idea was exactly
 //       var <type> : ID = expr?
@@ -56,6 +56,16 @@ term                    :   factor TIMES term
                         |   factor ;
 
 factor                  :   LEFT_PAREN expr RIGHT_PAREN
-                        |   DECIMAL_LITERAL ;
+                        |   literals ;
+
+literals                :   numeric_literals ;
+
+numeric_literals        :   integer_literal
+                        |   real_literal
+                        ;
+
+integer_literal         :   INTEGER_LIT ;
+
+real_literal            :   REAL_LIT ;
 
 types                   :   ID ;
