@@ -22,6 +22,12 @@ These are my notes / ramblings:
 8. [Lexer Grammar](./src/ExperimentalLexer.g4)
 9. [Parser Grammar](./src/ExperimentalParser.g4)
 
+## TODO
+
+1. Create an AST.
+2. Add basic semantic analysis.
+3. Convert to LLVM IR.
+
 # Building
 
 ```bash
