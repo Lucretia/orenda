@@ -17,3 +17,6 @@ add_executable(compiler main.cpp
                ${ANTLR_ExperimentalGrammarLexer_CXX_OUTPUTS}
                ${ANTLR_ExperimentalGrammarParser_CXX_OUTPUTS})
 target_link_libraries(compiler antlr4_static)
+
+set_source_files_properties(${ANTLR_ExperimentalGrammarLexer_CXX_OUTPUTS} ${ANTLR_ExperimentalGrammarParser_CXX_OUTPUTS} PROPERTIES COMPILE_FLAGS -std=c++11)
+set_source_files_properties(main.cpp PROPERTIES COMPILE_FLAGS -std=c++20)
