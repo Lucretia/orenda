@@ -19,8 +19,10 @@ These are my notes / ramblings:
 5. [Ranges](./docs/notes/ranges.md)
 6. [Arrays](./docs/notes/arrays.md)
 7. [Reference types](./docs/notes/reference-types.md)
-8. [Lexer Grammar](./src/ExperimentalLexer.g4)
-9. [Parser Grammar](./src/ExperimentalParser.g4)
+8. [Parallism and concurrency](/docs/notes/parallelism-concurrency.md)
+9. [Reflection](./docs/notes/reflection.md)
+10. [Lexer Grammar](./src/ExperimentalLexer.g4)
+11. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
