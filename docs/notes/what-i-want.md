@@ -33,6 +33,10 @@ I want the following things:
 * Inequality symbol should be either "/=" or "!="
 * Ultimately, no semi-colons.
 * No "begin" keyword.
+* Vector and matrix types with swizzling?
+* Saturated types?
+* Tensors?
+* Better array handling than Ada, it's often frustrating to use Ada's arrays.
 
 ## Syntax I want to see
 
