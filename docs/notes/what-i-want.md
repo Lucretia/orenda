@@ -32,7 +32,6 @@ I want the following things:
 * Use known comment syntax, one line comments using "//" or "--"
 * Inequality symbol should be either "/=" or "!="
 * Ultimately, no semi-colons.
-* No "begin" keyword.
 * Vector and matrix types with swizzling?
 * Saturated types?
 * Tensors?
