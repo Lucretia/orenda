@@ -13,7 +13,9 @@ After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzD
 These are my notes / ramblings:
 
 1. [What I want](./docs/notes/what-i-want.md)
-2. [Literals](./docs/notes/literals.md)
+2. Lexical elements
+   * [Comments](./docs/notes/comments.md)
+   * [Literals](./docs/notes/literals.md)
 3. [Functions](./docs/notes/functions.md)
 4. [Type system](./docs/notes/type-system.md)
 5. [Strings](./docs/notes/strings.md)
