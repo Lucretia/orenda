@@ -30,9 +30,10 @@ These are my notes / ramblings:
 
 ## TODO
 
-1. Create an AST.
-2. Add basic semantic analysis.
-3. Convert to LLVM IR.
+1. Give this thing a name.
+2. Create an AST.
+3. Add basic semantic analysis.
+4. Convert to LLVM IR.
 
 ## Building
 
