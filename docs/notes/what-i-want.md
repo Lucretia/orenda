@@ -2,7 +2,7 @@
 
 Is it better to start a new programming language by starting from scratch or by taking the grammar to an existing language and modifying it over time? Both ways are kind of difficult, for one reason or another.
 
-I'm starting from scratch and will develop the grammar as I go.
+I keep going back and forth on the issue about whether to start from the Oberon 2 grammar or from scratch. I have developed a basic grammar for a very simple subset without semi-colons from scratch, which can form the basis, but I may still change my mind.
 
 Most new languages, such as Jai, Odin, Go, etc. were designed to replace C<sup>[1](#rust-note)</sup>; my intention is to replace Ada as my main language of choice. I've come to the conclusion that I really want something smaller and easier to develop with. I really like the language, but it is a huge language, on the scale of C++ huge.
 
