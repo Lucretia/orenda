@@ -10,6 +10,15 @@ There is no such thing as a character any more, only code points, and each "char
 * ```code_point```? A bit longer than the above.
 * ```rune```? This is what newer languages such as Go and Odin are using, it kind of fits the definition of a codepoint I suppose.
 
+### Literals
+
+```exp
+'A'
+'3'
+'\0x32C8`  // Idiographic telegraph symbol for September, ㋈.
+'16#A8F6#' // Devanagari sign candrabindu three, ꣶ.
+```
+
 ## Strings
 
 * Based on arrays in the language.
