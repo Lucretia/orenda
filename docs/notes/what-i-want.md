@@ -68,6 +68,7 @@ I want the following things:
 * Metaprogramming:
   * Type level reflection, like Ada's attribute syntax, using ```?``` query operator.
   * Reflection? Being able to manipulate the data and types of the running program at runtime?
+    * Optimisation will affect this, functions can be inlined and no longer be present.
   * Extensible via macros?
 * No "begin" keyword.
 * Only one way to do the same thing.
