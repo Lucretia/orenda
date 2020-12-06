@@ -51,8 +51,7 @@ I don't want to use braces as these are very difficult to see, especially when y
 
 I want to see this:
 
-```
-
+```exp
 function name is
     if ... then
         ...
