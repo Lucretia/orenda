@@ -10,44 +10,71 @@ I intend to use other languages as inspiration, but I do want something smaller 
 
 I want the following things:
 
-* A replacement for Ada.
-* General purpose.
-* Multi-paradigm.
-* A readable, nice syntax.
+* A replacement for Ada, but adhering to the same principles.
+* A readable, nice syntax. Wirthian style with other influences.
+* Small core language containing orthogonal concepts.
+* Highly portable.
+* Concurrency / parallelism capabilities baked into the language.
+* Type system:
+  * Strong static.
+  * No pointers:
+    * But still able to assign address to objects.
+  * Enumerations.
+  * Array operations, useful for games and scientific applications:
+    * Better array handling than Ada, it's often frustrating to use Ada's arrays.
+    * Vector and matrix types.
+    * Swizzling.
+    * Multi-dimensional slicing?
+    * Tensors?
+  * Saturated types? Useful for embedded, audio type work.
+* Unicode:
+  * It's the 21st century and we need to support this.
+  * The program source should be Unicode.
+  * Unicode character/rune and string types by default.
+* General purpose systems programming language. I want to be able to program the following:
+  * Mobile.
+  * Embedded.
+  * Bare metal.
+  * Desktop / Server.
 * High-level, but capable of handling low-level work easily.
-* Highly portability.
-* Small core language.
-* Extensible via macros?
-* No pointers.
-  + But still able to assign address to objects.
-* No global variables/data.
-* No garbage collection (GC).
-* No exceptions.
-* No "begin" keyword.
-* Lower case keywords.
-* Only one way to do the same thing.
-* Concurrency / parallelism capabilities.
-* Unicode.
-* Enumerations.
+  * No global variables/data, they should all be encapsulated within modules.
+* Memory management:
+  * Handled by the language environment.
+  * No garbage collection (GC).
+* Lower case keywords, *cough* Oberon *cough*.
 * Generics.
 * Hierarchical modules, like Ada's, e.g. ```<lib>.OS```, ```<lib>.OS.Linux```, ```<lib>.FFI.C```, ```<lib>.System```.
 * Uniform Function Call Syntax (UFCS).
 * Named parameter associations.
-* Lambda functions?
-* Use known comment syntax, one line comments using "//" or "--"
-* Inequality symbol should be either "/=" or "!="
-* Ultimately, no semi-colons.
-* Vector and matrix types with swizzling?
-* Saturated types?
-* Tensors?
-* Better array handling than Ada, it's often frustrating to use Ada's arrays.
 * Traits:
-  + Could handle object-orientation without having object-orientation built in.
-  + Can we do dynamic dispatch? Probably not.
+  * Objects can be built out of traits.
+  * Could handle object-orientation without having object-orientation built in.
+    * Operations can be denoted using Oberon/Go style type bound procedures/functions.
+    * Would need an interface mechanism.
+  * Can we do dynamic dispatch? Probably not.
+  * OOP is not inherently bad, just Java style "Everything is an object" is.
 * Better C interop than Ada. Currently, there is a lot work that has to be done when binding C in Ada, especially when developing thick bindings.
-  + A proper C string type.
-  + Binding generation done by Clang.
-  + Check how Odin does it.
+  * A proper C string type.
+  * Binding generation done by Clang.
+  * Check how Odin does it.
+* Use known comment syntax, one line comments using "//" or "--"
+* Inequality symbol should be either "/=" or "!=". By using the latter it's immediately known from other languages.
+* Error handling:
+  * Exceptions?
+  * Multiple return values?
+* More flexible ranges? ```[]```, ```(]```. ```[)```, etc.
+* Multi-paradigm.
+* Metaprogramming:
+  * Type level reflection, like Ada's attribute syntax, using ```?``` query operator.
+  * Reflection? Being able to manipulate the data and types of the running program at runtime?
+  * Extensible via macros?
+* No "begin" keyword.
+* Only one way to do the same thing.
+* Lambda functions?
+* First class functions?
+* Ultimately, no semi-colons.
+* I disagree with this new one loop only fad.
+  * I certainly don't want to incorporate C's terrible for loop "design."
 
 ## Syntax I want to see
 
@@ -61,10 +88,9 @@ Autocompletion in an editor can alleviate the typing for the lazy.
   - From same talk about 4:00:00, "pushing past language type systems to prove safety"
 * JDK 16 RNG
 
-## Refs
+## References
 
-https://blog.ploeh.dk/2015/04/13/less-is-more-language-features/
-
+[less is more language features](https://blog.ploeh.dk/2015/04/13/less-is-more-language-features)
 
 ---
 <a name="rust-note">[1]</a>: Rust was developed to replace C++.
