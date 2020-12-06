@@ -37,6 +37,9 @@ I want the following things:
 * Saturated types?
 * Tensors?
 * Better array handling than Ada, it's often frustrating to use Ada's arrays.
+* Traits:
+  - Could handle object-orientation without having object-orientation built in.
+  - Can we do dynamic dispatch? Probably not.
 
 ## Syntax I want to see
 
