@@ -12,6 +12,7 @@ I want the following things:
 
 * A replacement for Ada, but adhering to the same principles.
 * A readable, nice syntax. Wirthian style with other influences.
+* Like other people developing languages, I want get pleasure from developing software again.
 * Small core language containing orthogonal concepts.
 * Highly portable.
 * Concurrency / parallelism capabilities baked into the language.
