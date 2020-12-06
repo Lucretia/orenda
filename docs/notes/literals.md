@@ -72,6 +72,15 @@ A strong statically compiled language should never need any kind of suffix, Ada 
 
 I could take the combination approach of Parasail, allow the Go style prefix and the Ada style based literals. But this does go against the "one way to do things."
 
+Going with the based numeral from Ada, allows exotic base systems, such as the duodecimal as noted above and base 36 and base 64. GNAT (Ada) allows bases 2-16.
+
+```bash
+$ ~/opt/free-ada-9.2.0/bin/gnatmake -c test.adb
+gcc -c test.adb
+test.adb:2:19: base not 2-16
+gnatmake: "test.adb" compilation error
+```
+
 ## References
 
 * [Ada](http://www.ada-auth.org/standards/2xrm/html/RM-2-4-1.html)
