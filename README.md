@@ -16,7 +16,7 @@ These are my notes / ramblings:
 2. Lexical elements
    * [Comments](./docs/notes/lexical-elements/comments.md)
    * [Literals](./docs/notes/lexical-elements/literals.md)
-   * [Strings](./docs/notes/lexical-elements/strings.md)
+   * [Strings](./docs/notes/lexical-elements/textual-data.md)
 3. [Functions](./docs/notes/functions.md)
 4. [Type system](./docs/notes/type-system.md)
 5. [Strings](./docs/notes/strings.md)
