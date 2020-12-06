@@ -28,6 +28,7 @@ I want the following things:
     * Multi-dimensional slicing?
     * Tensors?
   * Saturated types? Useful for embedded, audio type work.
+  * Changing representation by creating a new type? e.g. changing from SOA to AOS and vice versa, similar to packed/unpacked conversions in Ada.
 * Unicode:
   * It's the 21st century and we need to support this.
   * The program source should be Unicode.
