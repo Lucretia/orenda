@@ -59,7 +59,7 @@ function name is
 end function name
 ```
 
-Autocompletion in an editor can aleviate the typing for the lazy.
+Autocompletion in an editor can alleviate the typing for the lazy.
 
 ## Other language ideas
 
