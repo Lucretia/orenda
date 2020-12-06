@@ -15,6 +15,8 @@ There is no such thing as a character any more, only code points, and each "char
 ```exp
 'A'
 '3'
+'λ'         // Lambda.
+'π'         // Pi.
 '\0x_32_C8` // Idiographic telegraph symbol for September, ㋈.
 '16#A8_F6#' // Devanagari sign candrabindu three, ꣶ.
 ```
