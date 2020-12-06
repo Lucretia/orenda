@@ -49,26 +49,6 @@ I want the following things:
 
 I don't want to use braces as these are very difficult to see, especially when you're tired. Bad tools and wreck the formatting making finding the correct closing brace even more difficult to see. The use of "end" on it's own is just as bad, especially for being able to tell which closing block or construct you are looking at.
 
-I want to see this:
-
-```exp
-function name is
-    if ... then
-        ...
-    end if
-end function name
-```
-
-Or
-
-```exp
-function name is
-    if ... then
-        ...
-    end if
-end name
-```
-
 Autocompletion in an editor can alleviate the typing for the lazy.
 
 ## Other language ideas
