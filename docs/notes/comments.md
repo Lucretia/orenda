@@ -4,7 +4,7 @@ Most languages are C based and utilise the standard block comment, ```/* ... */`
 
 Other languages, including GCC's C compiler, has added C++'s single line comment, ```// ...```.
 
-Other languages have different single line comments, ```# ...``` (Python, Ruby), ```; ...``` (Assembly language, Lisp), (), ```--``` (Ada, Haskell), etc.
+Other languages have different single line comments, ```# ...``` (Python, Ruby), ```; ...``` (Assembly language, Lisp), ```--``` (Ada, Haskell), etc.
 
 Wirth loved to use a slightly more weird syntax, ```(* ... *)```, which I find difficult to type as it requires two hands.
 
