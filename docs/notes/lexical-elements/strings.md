@@ -1,10 +1,17 @@
-# Strings
+# Textual data
 
-* Unicode.
-  * No such thing as a character anymore, only code points, but what should the data type be called?
-    * ```code_point```?
-    * ```character```?
-    * ```rune```?
+## Characters
+
+As the source files will be written in Unicode, UTF-8 (no BOM), to be precise, it's necessary for string literals to be able to contain unicode codepoints.
+
+There is no such thing as a character any more, only code points, and each "character" can be composed of multiple codepoints. But it is required to handle codepoints, but what should the data type be called? There are a few options:
+
+* ```char``` or ```character```? As I said above, they no longer exist,
+* ```code_point```? A bit longer than the above.
+* ```rune```? This is what newer languages such as Go and Odin are using, it kind of fits the definition of a codepoint I suppose.
+
+## Strings
+
 * Based on arrays in the language.
   * Enables slicing.
 * UTF-8.
@@ -12,7 +19,7 @@
   * Grapheme(??) cluster.
   * Word.
 * Extrapolation
-  * Embed expressions into strings which are evaulated.
+  * Embed expressions into strings which are evaluated.
   * ```"expression: ${var1 + var2}"```
   * ```"expression: $var1"```
   * ```"expression: '{var1 + var2}"```
