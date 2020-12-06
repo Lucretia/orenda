@@ -59,6 +59,16 @@ function name is
 end function name
 ```
 
+Or
+
+```exp
+function name is
+    if ... then
+        ...
+    end if
+end name
+```
+
 Autocompletion in an editor can alleviate the typing for the lazy.
 
 ## Other language ideas
