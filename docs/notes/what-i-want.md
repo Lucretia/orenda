@@ -38,8 +38,12 @@ I want the following things:
 * Tensors?
 * Better array handling than Ada, it's often frustrating to use Ada's arrays.
 * Traits:
-  - Could handle object-orientation without having object-orientation built in.
-  - Can we do dynamic dispatch? Probably not.
+  + Could handle object-orientation without having object-orientation built in.
+  + Can we do dynamic dispatch? Probably not.
+* Better C interop than Ada. Currently, there is a lot work that has to be done when binding C in Ada, especially when developing thick bindings.
+  + A proper C string type.
+  + Binding generation done by Clang.
+  + Check how Odin does it.
 
 ## Syntax I want to see
 
