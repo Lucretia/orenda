@@ -8,7 +8,7 @@ Having used Ada a fair bit over the last 15 years, I've come to the conclusion t
 
 After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzDzKdB0), I realise that whilst the core language should be small, it should provide enough capability to extend the language.
 
-# Documentation
+## Documentation
 
 These are my notes / ramblings:
 
@@ -30,7 +30,7 @@ These are my notes / ramblings:
 2. Add basic semantic analysis.
 3. Convert to LLVM IR.
 
-# Building
+## Building
 
 ```bash
 $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
@@ -39,7 +39,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 ## Requirements
 
 * A C++14 compiler.
-* ANTLR4 (4.8-complete.jar)
+* ANTLR4 (4.9-complete.jar)
 
 ## Tested with
 
@@ -50,14 +50,14 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 v0.0.32
 
-# Contributions
+## Contributions
 
 I'm not accepting any PR's but I am happy to take advice, ideas or suggestions.
 
-# Copyright
+## Copyright
 
 Copyright (C) 2020 by Luke A. Guest
 
-# Licence
+## Licence
 
 [MPL 2.0](./LICENCE.txt)
