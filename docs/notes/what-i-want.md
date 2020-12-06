@@ -20,6 +20,7 @@ I want the following things:
 * No garbage collection (GC).
 * No exceptions.
 * No "begin" keyword.
+* Lower case keywords.
 * Only one way to do the same thing.
 * Concurrency / parallelism capabilities.
 * Unicode.
