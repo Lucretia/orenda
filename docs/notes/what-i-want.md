@@ -11,9 +11,9 @@ I intend to use other languages as inspiration, but I do want something smaller 
 I want the following things:
 
 * A replacement for Ada, but adhering to the same principles.
-* A readable, nice syntax. Wirthian style with other influences.
-* Like other people developing languages, I want get pleasure from developing software again.
-* Small core language containing orthogonal concepts.
+* A **readable**, nice syntax. Wirthian in style, but not exactly his as I'm not a fan of his semi-colon and uppercase keyword usage. I will do what Ada did and make it a bit more consistent. I will also use other influences.
+* Like other people developing other languages, I want get pleasure from developing software again.
+* Small core language containing **orthogonal** concepts.
 * Highly portable.
 * Concurrency / parallelism capabilities baked into the language.
 * Type system:
