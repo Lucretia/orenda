@@ -57,6 +57,7 @@ I want the following things:
   * A proper C string type.
   * Binding generation done by Clang.
   * Check how Odin does it.
+  * We need to support variabel argument lists, at least for C interoperation.
 * Use known comment syntax, one line comments using "//" or "--"
 * Inequality symbol should be either "/=" or "!=". By using the latter it's immediately known from other languages.
 * Error handling:
@@ -75,6 +76,7 @@ I want the following things:
 * Ultimately, no semi-colons.
 * I disagree with this new one loop only fad.
   * I certainly don't want to incorporate C's terrible for loop "design."
+* I considered a swap operator ```<=>``` which would be nice and short, Odin does this with ```a, b = b, a;``` due to be able to handle multiple variables at a time.
 
 ## Syntax I want to see
 
