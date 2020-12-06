@@ -4,9 +4,7 @@ Is it better to start a new programming language by starting from scratch or by 
 
 I'm starting from scratch and will develop the grammar as I go.
 
-Most new languages, such as Jai, Odin, Go, etc. were designed to replace C[^1]; my intention is to replace Ada as my main language of choice. I've come to the conclusion that I really want something smaller and easier to develop with. I really like the language, but it is a huge language, on the scale of C++ huge.
-
-[^1]: Rust was developed to replace C++.
+Most new languages, such as Jai, Odin, Go, etc. were designed to replace C<sup>[1](#rust-note)</sup>; my intention is to replace Ada as my main language of choice. I've come to the conclusion that I really want something smaller and easier to develop with. I really like the language, but it is a huge language, on the scale of C++ huge.
 
 I intend to use other languages as inspiration, but I do want something smaller than what I've been using, which is Ada. I do think that for people to even look at the language, they need to feel that it is somewhat familiar, I'm not going for what everyone else is doing, i.e. developing a new C or C++ replacement.
 
@@ -66,3 +64,8 @@ Autocompletion in an editor can alleviate the typing for the lazy.
 ## Refs
 
 https://blog.ploeh.dk/2015/04/13/less-is-more-language-features/
+
+
+---
+<a name="rust-note">[1]</a>: Rust was developed to replace C++.
+
