@@ -62,6 +62,8 @@ As mentioned in the arrays document, it would be useful to be able to specify SI
 
 ## Notes
 
+* Variables/constants should be initialised to a known value.
+* Variables/constants should be non-mutable by default.
 * Dispatching on return types is very useful and an underrated feature of Ada.
 
 ## References/Pointers
