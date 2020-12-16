@@ -23,7 +23,7 @@ These are my notes / ramblings:
    * [Reference types](./docs/notes/type-system/reference-types.md)
    * [Reflection](./docs/notes/type-system/reflection.md)
 4. [Functions](./docs/notes/functions.md)
-5. [Parallism and concurrency](/docs/notes/parallelism-concurrency.md)
+5. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
 6. [Lexer Grammar](./src/ExperimentalLexer.g4)
 7. [Parser Grammar](./src/ExperimentalParser.g4)
 
