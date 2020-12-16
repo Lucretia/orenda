@@ -18,4 +18,3 @@
 * [Cone MM](https://pling.jondgoodwin.com/post/reference-lifecycle)
 * [Basil MM](https://www.reddit.com/r/ProgrammingLanguages/comments/gwn0r9/experimenting_with_memory_management_for_basil)
 * [Arena / region](https://en.wikipedia.org/wiki/Region-based_memory_management)
-
