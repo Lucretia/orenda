@@ -5,10 +5,10 @@
 * Still able to assign address to objects.
 * Safely share memory?
 * Assigning references?
-  + Ref count?
-  + Rust-like ownership?
+  * Ref count?
+  * Rust-like ownership?
 
-```
+```exp
 // Get address of b and assign to a.
 // Rust move / borrow semantics? Does b become unusable now?
 a : integer = b?address
