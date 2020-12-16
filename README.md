@@ -17,7 +17,8 @@ These are my notes / ramblings:
    * [Comments](./docs/notes/lexical-elements/comments.md)
    * [Literals](./docs/notes/lexical-elements/literals.md)
    * [Strings](./docs/notes/lexical-elements/textual-data.md)
-3. [Type system](./docs/notes/type-system/intro.md)
+3. Type system
+   * [Types](./docs/notes/type-system/types.md)
    * [Ranges](./docs/notes/type-system/ranges.md)
    * [Arrays](./docs/notes/type-system/arrays.md)
    * [Reference types](./docs/notes/type-system/reference-types.md)
