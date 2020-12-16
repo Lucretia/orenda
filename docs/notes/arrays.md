@@ -1,6 +1,6 @@
 # Arrays
 
-```
+```exp
 array [x .. y, w .. z, ...] of type
 ```
 
@@ -8,14 +8,13 @@ Where each range expressions (i.e. ```a .. b```) are of the same type.
 
 or
 
-```
+```exp
 ?
 ```
 
-
 ## Indexing
 
-```
+```exp
 a[3]
 
 // multiple dimensions:
@@ -30,12 +29,12 @@ a[3][3]
 ### Multi-dimensional array slicing
 
 * For 1D:
-  + Copy data from one slice into another slice.
+  * Copy data from one slice into another slice.
 * for nD:
-  + Creates a new array object and copies the data across.
+  * Creates a new array object and copies the data across.
 * Do we need to shared the slice at all?
 
-```
+```exp
 a = b[1]
 a[2 .. 5] = b[6 .. 9]
 a[2 .. ] = b[6 .. ]
@@ -46,7 +45,7 @@ a[x1, x2 .. y1, y2] = b[x3, x4 .. y3, y4]
 
 What if we do this?
 
-```
+```exp
 a = b[x3, x4 .. y3, y4]
 ```
 
