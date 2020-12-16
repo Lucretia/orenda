@@ -21,11 +21,11 @@ These are my notes / ramblings:
    * [Ranges](./docs/notes/type-system/ranges.md)
    * [Arrays](./docs/notes/type-system/arrays.md)
    * [Reference types](./docs/notes/type-system/reference-types.md)
+   * [Reflection](./docs/notes/type-system/reflection.md)
 4. [Functions](./docs/notes/functions.md)
 5. [Parallism and concurrency](/docs/notes/parallelism-concurrency.md)
-6. [Reflection](./docs/notes/reflection.md)
-7. [Lexer Grammar](./src/ExperimentalLexer.g4)
-8. [Parser Grammar](./src/ExperimentalParser.g4)
+6. [Lexer Grammar](./src/ExperimentalLexer.g4)
+7. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
