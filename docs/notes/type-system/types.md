@@ -13,7 +13,7 @@
 * Escaped Unicode? ```\16#1234_5678```.
 * Dispatching on return types is very useful and an underrated feature of Ada.
 
-## Refs
+## References/Pointers
 
 * [Cone MM](https://pling.jondgoodwin.com/post/reference-lifecycle)
 * [Basil MM](https://www.reddit.com/r/ProgrammingLanguages/comments/gwn0r9/experimenting_with_memory_management_for_basil)
