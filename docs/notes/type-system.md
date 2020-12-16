@@ -11,6 +11,7 @@
 *
 * Escaped characters? ```\r, \n``` etc.
 * Escaped Unicode? ```\16#1234_5678```.
+* Dispatching on return types is very useful and an underrated feature of Ada.
 
 ## Refs
 
