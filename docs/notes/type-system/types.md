@@ -2,7 +2,7 @@
 
 ## Goals
 
-* Query the type systems with ther query operator, ```?```. Similar to Ada's attributes.
+* Query the type systems with the query operator, ```?```. Similar to Ada's attributes.
 
 ## Notes
 
