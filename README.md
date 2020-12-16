@@ -18,14 +18,14 @@ These are my notes / ramblings:
    * [Literals](./docs/notes/lexical-elements/literals.md)
    * [Strings](./docs/notes/lexical-elements/textual-data.md)
 3. [Type system](./docs/notes/type-system.md)
+   * [Ranges](./docs/notes/type-system/ranges.md)
+   * [Arrays](./docs/notes/type-system/arrays.md)
+   * [Reference types](./docs/notes/type-system/reference-types.md)
 4. [Functions](./docs/notes/functions.md)
-5. [Ranges](./docs/notes/ranges.md)
-6. [Arrays](./docs/notes/arrays.md)
-7. [Reference types](./docs/notes/reference-types.md)
-8. [Parallism and concurrency](/docs/notes/parallelism-concurrency.md)
-9.  [Reflection](./docs/notes/reflection.md)
-10.  [Lexer Grammar](./src/ExperimentalLexer.g4)
-11.  [Parser Grammar](./src/ExperimentalParser.g4)
+5. [Parallism and concurrency](/docs/notes/parallelism-concurrency.md)
+6. [Reflection](./docs/notes/reflection.md)
+7. [Lexer Grammar](./src/ExperimentalLexer.g4)
+8. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
