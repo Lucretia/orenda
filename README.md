@@ -2,11 +2,15 @@
 
 My attempt at creating a new programming language a bit at a time by experimenting with various ideas.
 
+This documentation will evolve over time until I get to a point whereby a new implementation, and therefore github project, will be started. Expect this documentation to be a bit rambly in places and maybe not even complete thoughts.
+
 ## Background
 
-Having used Ada a fair bit over the last 15 years, I've come to the conclusion that it's time to move to another language, but I want something like Ada, but smaller, there isn't anything out there like this.
+Having used Ada a fair bit over the last 15 years, I've come to the conclusion that it's time to move to another language, but I want something like Ada, but smaller. There just isn't anything out there like this because every language "designer" out there just wants to remake C, but as Ginger Bill stated, "C is broken."
 
-After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzDzKdB0), I realise that whilst the core language should be small, it should provide enough capability to extend the language.
+I have talked with other Ada users before about an Ada like language that takes the type system from Ada and adds it to a more Oberon like language. It's a subject which keeps coming up time and time again, so I have decided to give it a try; every programmer has at least one language they want to write, right?
+
+After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzDzKdB0), I realise that whilst the core language should be small, it should provide enough capability to extend the language itself.
 
 ## Documentation
 
@@ -53,7 +57,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## [Current version](http://www.semver.org)
 
-v0.0.32
+v0.0.33
 
 ## Contributions
 
