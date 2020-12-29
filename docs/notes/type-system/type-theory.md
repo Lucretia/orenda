@@ -18,7 +18,7 @@ $$\Gamma \vdash \diamond$$
 
 On Github:
 
-```math
+```latex
 \Gamma \vdash \mathfrak J
 \varnothing, x : Nat \vdash x+1 : Nat
 \Gamma \vdash \diamond
