@@ -19,9 +19,7 @@ $$\Gamma \vdash \diamond$$
 On Github:
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}\Gamma \vdash \mathfrak J">
-<br />
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}\varnothing, x : Nat \vdash x+1 : Nat">
-<br />
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}\Gamma \vdash \diamond">
 
 ## References
