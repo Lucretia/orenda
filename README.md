@@ -22,6 +22,7 @@ These are my notes / ramblings:
    * [Literals](./docs/notes/lexical-elements/literals.md)
    * [Strings](./docs/notes/lexical-elements/textual-data.md)
 3. Type system
+   * [Type Theory](./docs/notes/type-system/type-theory.md)
    * [Types](./docs/notes/type-system/types.md)
    * [Ranges](./docs/notes/type-system/ranges.md)
    * [Arrays](./docs/notes/type-system/arrays.md)
@@ -57,7 +58,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## [Current version](http://www.semver.org)
 
-v0.0.35
+v0.0.36
 
 ## Contributions
 
