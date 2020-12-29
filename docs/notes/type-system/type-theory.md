@@ -18,11 +18,11 @@ $$\Gamma \vdash \diamond$$
 
 On Github:
 
-```latex
-\Gamma \vdash \mathfrak J
-\varnothing, x : Nat \vdash x+1 : Nat
-\Gamma \vdash \diamond
-```
+<img src="https://render.githubusercontent.com/render/math?math=\Gamma \vdash \mathfrak J">
+<br />
+<img src="https://render.githubusercontent.com/render/math?math=\varnothing, x : Nat \vdash x+1 : Nat">
+<br />
+<img src="https://render.githubusercontent.com/render/math?math=\Gamma \vdash \diamond">
 
 ## References
 <a id="1">[1]</a>
