@@ -13,7 +13,7 @@ $$\Gamma \vdash \diamond$$
 In Markdown Preview (VSCode), renders as:
 
 $$\Gamma \vdash \mathfrak J$$
-$$\varnothing, x : Nat \vdash x+1 : Nat$$
+$$\varnothing, x \colon Nat \vdash x+1 \colon Nat$$
 $$\Gamma \vdash \diamond$$
 
 On Github:
