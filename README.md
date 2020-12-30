@@ -17,21 +17,23 @@ After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzD
 These are my notes / ramblings:
 
 1. [What I want](./docs/notes/what-i-want.md)
-2. Lexical elements
+2. Oberon
+   * [Basing it on Oberon 2](./docs/notes/oberon/basing-on-oberon2.md)
+3. Lexical elements
    * [Comments](./docs/notes/lexical-elements/comments.md)
    * [Literals](./docs/notes/lexical-elements/literals.md)
    * [Strings](./docs/notes/lexical-elements/textual-data.md)
-3. Type system
+4. Type system
    * [Type Theory](./docs/notes/type-system/type-theory.md)
    * [Types](./docs/notes/type-system/types.md)
    * [Ranges](./docs/notes/type-system/ranges.md)
    * [Arrays](./docs/notes/type-system/arrays.md)
    * [Reference types](./docs/notes/type-system/reference-types.md)
    * [Reflection](./docs/notes/type-system/reflection.md)
-4. [Functions](./docs/notes/functions.md)
-5. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
-6. [Lexer Grammar](./src/ExperimentalLexer.g4)
-7. [Parser Grammar](./src/ExperimentalParser.g4)
+5. [Functions](./docs/notes/functions.md)
+6. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
+7. [Lexer Grammar](./src/ExperimentalLexer.g4)
+8. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
@@ -58,7 +60,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## [Current version](http://www.semver.org)
 
-v0.0.36
+v0.0.37
 
 ## Contributions
 

@@ -1,0 +1,168 @@
+(* TODO -
+ *
+ * Remove pointers.
+   * Add either optional types or nullable types.
+ * Are sets required?
+ * Make everything immutable unless specified?
+ * Add unsafe?
+ * Add module definitions?
+ * Add child modules.
+ * Add generics.
+ * Add lambdas.
+ * Add first class/pure functions?
+ *)
+
+module              =   [import_list]
+                        "module" qualified_identifier "is"
+                            decl_sequence
+                        ["begin"
+                            statements]
+                        "end" qualified_identifier ";"
+                    ;
+
+import_list         =   "import" [qualified_identifier "as"] identifier { ","
+                                 [qualified_identifier "as"] identifier } ";"
+                    ;
+
+(* TODO - This seems to enable the keywords without the decl's. *)
+decl_sequence       =   {   "constant" { constant_decl ";" }
+                        |   "type" { type_decl ";" }
+                        |   "var" { var_decl ";" } }
+                        {   function_decl ";"
+                        |   forward_decl ";" }
+                    ;
+
+constant_decl       =   identifier_def ":=" constant_expr ;
+
+type_decl           =   identifier_def "is" type ;
+
+(* TODO - Add default initialisation *)
+var_decl            =   identifier_list ":" type ;
+
+function_decl       =   "function" [receiver] identifier_def [formal_params] "is"
+                            decl_sequence
+                        ["begin"
+                            statements]
+                        "end" identifier ";"
+                    ;
+
+forward_decl        =   "function" "^" [receiver] identifier_def [formal_params] ;
+
+formal_params       =   "(" [formal_parameter {";" formal_parameter}] ")" [":" qualified_identifier] ;
+
+formal_parameter    =   ["var"] identifier {"," identifier} ":" type ;
+
+receiver            =   "(" ["var"] identifier ":" identifier ")" ;
+
+type                =   qualified_identifier
+                    |   "array" [constant_expr {"," constant_expr}] "of" type
+                    |   "record" ["("qualified_identifier")"]
+                            field_list {";" field_list}
+                        "end"
+                    |   "pointer" "to" type
+                    |   "function" [formal_params]
+                    ;
+
+field_list          =   [identifier_list ":" type] ;
+
+statements          =   statement ";" {statement ";"} ;
+
+statement           =   assignment_stmt
+                    |   function_call
+                    |   if_statement
+                    |   case_statement
+                    |   while_loop
+                    |   repeat_loop
+                    |   for_loop
+                    |   general_loop
+                    |   with_statement
+                    |   "exit"
+                    |   "return" [expression]
+                    ;
+
+assignment_stmt     =   designator ":=" expression ;
+
+function_call       =   designator ["(" [expr_list] ")"] ;
+
+if_statement        =   "if" expression "then"
+                            statements
+                        {"elsif" expression "then"
+                            statements}
+                        ["else"
+                            statements]
+                        "end" ;
+
+case_statement      =   "case" expression "of"
+                            case {"|" case}
+                        ["else"
+                            statements]
+                        "end" ;
+
+case                =   [case_labels {"," case_labels} ":"
+                            statements] ;
+
+case_labels         =   constant_expr [".." constant_expr] ;
+
+while_loop          =   "while" expression "loop"
+                            statements
+                        "end" ;
+
+repeat_loop         =   "loop"
+                            statements
+                        "until" expression ;
+
+for_loop            =   "for" identifier ":=" expression "to" expression ["by" constant_expr] "loop"
+                            statements
+                        "end" ;
+
+general_loop        =   "loop"
+                            statements
+                        "end" ;
+
+with_statement      =   "with" Guard "do"
+                            statements {"|" Guard "do"
+                                statements}
+                        ["else"
+                            statements]
+                        "end"
+                    ;
+
+Guard               =   qualified_identifier ":" qualified_identifier ;
+
+constant_expr       =   expression ;
+
+expression          =   simple_expr [relation simple_expr] ;
+
+simple_expr         =   ["+" | "-"] term {add_op term} ;
+
+term                =   factor {mul_op factor} ;
+
+factor              =   designator ["(" [expr_list] ")"]
+                    |   number
+                    |   character
+                    |   string
+                    |   "null"
+                    |   set
+                    |   "(" expression ")"
+                    |   "not" factor
+                    ;
+
+set                 =   "{" [element {"," element}] "}" ;
+
+element             =   expression [".." expression] ;
+
+relation            =   "=" | "!=" | "<" | "<=" | ">" | ">=" | "in" | "is" ;
+
+add_op              =   "+" | "-" | "or" ;
+
+mul_op              =   "*" | "/" | "div" | "mod" | "and" ;
+
+designator          =   qualified_identifier {"." identifier | "[" expr_list "]" | " ^ " | "(" qualified_identifier ")"} ;
+
+expr_list           =   expression {"," expression} ;
+
+identifier_list     =   identifier_def {"," identifier_def} ;
+
+qualified_identifier    =   [identifier "."] identifier ;
+
+identifier_def      =   identifier [" * " | " - "] ;
