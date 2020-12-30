@@ -1,3 +1,5 @@
+# Grammar
+
 * Terminals (tokens) in double quotes, ""
 * Optional []
 * Zero or more {}
@@ -54,7 +56,7 @@ variable-decl ::= "var" (* TODO? *) ":" identifier "=" expr ;
 
 (* TODO:
  *
- * Experiment with maths forumlae type expressions, like Julia.
+ * Experiment with maths formulae type expressions, like Julia.
  * ```2pi * r``` and ```2x + y```
  *)
 expr ::= literal ;
