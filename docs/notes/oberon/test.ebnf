@@ -121,15 +121,15 @@ general_loop        =   "loop"
                             statements
                         "end" ;
 
-with_statement      =   "with" Guard "do"
-                            statements {"|" Guard "do"
+with_statement      =   "with" guard "do"
+                            statements {"|" guard "do"
                                 statements}
                         ["else"
                             statements]
                         "end"
                     ;
 
-Guard               =   qualified_identifier ":" qualified_identifier ;
+guard               =   qualified_identifier ":" qualified_identifier ;
 
 constant_expr       =   expression ;
 
