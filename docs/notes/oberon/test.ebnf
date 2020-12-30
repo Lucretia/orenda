@@ -20,6 +20,7 @@ module              =   [import_list]
                         "end" qualified_identifier ";"
                     ;
 
+(* Allows to redefine module names, i.e. import System.OS as OS; *)
 import_list         =   "import" [qualified_identifier "as"] identifier { ","
                                  [qualified_identifier "as"] identifier } ";"
                     ;
@@ -36,7 +37,7 @@ constant_decl       =   identifier_def ":=" constant_expr ;
 
 type_decl           =   identifier_def "is" type ;
 
-(* TODO - Add default initialisation *)
+(* TODO - Add default initialisation. *)
 var_decl            =   identifier_list ":" type ;
 
 function_decl       =   "function" [receiver] identifier_def [formal_params] "is"
@@ -46,6 +47,7 @@ function_decl       =   "function" [receiver] identifier_def [formal_params] "is
                         "end" identifier ";"
                     ;
 
+(* TODO - Surely it's possible to do without forward declarations, like Go? *)
 forward_decl        =   "function" "^" [receiver] identifier_def [formal_params] ;
 
 formal_params       =   "(" [formal_parameter {";" formal_parameter}] ")" [":" qualified_identifier] ;
@@ -54,6 +56,11 @@ formal_parameter    =   ["var"] identifier {"," identifier} ":" type ;
 
 receiver            =   "(" ["var"] identifier ":" identifier ")" ;
 
+(* TODO - Arrays
+ *
+ * Need bounds and index types.
+ * Ranges.
+ *)
 type                =   qualified_identifier
                     |   "array" [constant_expr {"," constant_expr}] "of" type
                     |   "record" ["("qualified_identifier")"]
