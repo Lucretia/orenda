@@ -107,10 +107,12 @@ while_loop          =   "while" expression "loop"
                             statements
                         "end" ;
 
+(* TODO - Repeat loops can be implemented with an exit statement with an expression *)
 repeat_loop         =   "loop"
                             statements
                         "until" expression ;
 
+(* TODO - Add ranges *)
 for_loop            =   "for" identifier ":=" expression "to" expression ["by" constant_expr] "loop"
                             statements
                         "end" ;
