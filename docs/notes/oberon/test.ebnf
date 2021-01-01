@@ -5,7 +5,7 @@
  * Are sets required?
  * Make everything immutable unless specified?
  * Add unsafe?
- * Add module definitions?
+ * Add module definitions? These are in the ProgInOberon.pdf
  * Add child modules.
  * Add generics.
  * Add lambdas.
