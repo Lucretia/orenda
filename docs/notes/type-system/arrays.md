@@ -69,6 +69,7 @@ What do this do? Create a new matrix a with the values copied from b.
 * Row major
 * Defined at type definition time.
 * Can be switched or converted?
+* Jagged vs square, ability to switch using an aspect?
 
 ## SIMD
 
