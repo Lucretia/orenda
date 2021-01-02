@@ -1,4 +1,4 @@
-# An experimental language
+# Orenda: An experimental programming language
 
 My attempt at creating a new programming language a bit at a time by experimenting with various ideas.
 
@@ -60,7 +60,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## [Current version](http://www.semver.org)
 
-v0.0.37
+v0.0.38
 
 ## Contributions
 
