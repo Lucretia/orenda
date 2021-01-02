@@ -2,7 +2,7 @@
 
 There is a good argument for basing the language on another, such as Oberon 2. The following shows the original Oberon 2 grammar and what a more Ada-like (or modernised) version could look like.
 
-By basing the language on another one, I can get something going a little faster, but I don't have to stick to the original language in any way, therefore backwards compatibility is not required, which Patrik René et al have discovered<sup>[1](#1).</sup>.
+By basing the language on another one, I can get something going a little faster, but I don't have to stick to the original language in any way, therefore backwards compatibility is not required. Patrik René et al<sup>[1](#1).</sup> discovered that in any attempt to extend Oberon, or any other language, there is a requirement to keep compatibility with the previous versions of the language.
 
 The following is the original Oberon 2 grammar as shown in the Oberon 2 language report<sup>[2](#2).</sup>.
 
