@@ -12,6 +12,21 @@
  * Add first class/pure functions?
  *)
 
+(* Wondering whether it's worth modules having an interface?
+ * e.g.
+ * [import_list]
+ * "interface" qualified_identifier "is"
+ *     decl_sequence
+ * "end" qualified_identifier ";"
+ *
+ * "module" qualified_identifier ["implements" qualified_identifier {"," qualified_identifier}] "is"
+ *
+ * This would allow for implementations specific to various configurations, but that could also be done with a
+ * specification/body split, as Ada does?
+ *
+ * I'm wanting a traits system as well, which would allow traits to also fit in there somewhere, maybe with
+ * another keyword?
+ *)
 module              =   [import_list]
                         "module" qualified_identifier "is"
                             decl_sequence
