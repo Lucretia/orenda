@@ -12,6 +12,15 @@
  * Add first class/pure functions?
  *)
 
+(* A source file can either be a main function/entry point to the program or a library unit/module.
+ * Each unit can import modules and each should be passed to the compiler.
+ * A main function may or may not require command line arguments, i.e. an embedded systems program probably won't, an
+ * OS kernel would, a program run on the command line would.
+ *)
+compilation_unit    =   function_decl (* TODO - Should this be a special rule? *)
+                    |   module
+                    ;
+
 (* Wondering whether it's worth modules having an interface?
  * e.g.
  * [import_list]
@@ -36,8 +45,8 @@ module              =   [import_list]
                     ;
 
 (* Allows to redefine module names, i.e. import System.OS as OS; *)
-import_list         =   "import" [qualified_identifier "as"] identifier { ","
-                                 [qualified_identifier "as"] identifier } ";"
+import_list         =   "import" qualified_identifier ["as" identifier] { ","
+                                 qualified_identifier ["as" identifier] } ";"
                     ;
 
 (* TODO - This seems to enable the keywords without the decl's. *)
