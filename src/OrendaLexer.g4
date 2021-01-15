@@ -6,20 +6,15 @@ channels { WHITESPACE, COMMENTS }
 
 // Numbers.
 
-INTEGER_LITERAL :   NUMERAL (EXPONENT)? ;
-
-REAL_LITERAL    :   NUMERAL DOT NUMERAL (EXPONENT)? ;
+INTEGER_LITERAL :   NUMERAL ;
 
 fragment
 NUMERAL         :   DIGIT (UNDERSCORE? DIGIT)* ;
 
 fragment
-EXPONENT        :   [Ee] MINUS? NUMERAL ;
-
-fragment
 DIGIT           :   [0-9] ;
 
-BASED_LITERAL   :   BASE HASH [ ]? BASED_NUMERAL (DOT BASED_NUMERAL)? [ ]? HASH (EXPONENT)? ;
+BASED_LITERAL   :   BASE HASH [ ]? BASED_NUMERAL (DOT BASED_NUMERAL)? [ ]? HASH ;
 
 fragment
 BASE            :   NUMERAL ;
@@ -40,6 +35,11 @@ BINARY_DIGIT    :   [0-1] ;
 
 fragment
 OCTAL_DIGIT     :   [0-7] ;
+
+REAL_LITERAL    :   NUMERAL DOT NUMERAL (EXPONENT)? ;
+
+fragment
+EXPONENT        :   [Ee] MINUS? NUMERAL ;
 
 // Keywords.
 END         :   'end' ;

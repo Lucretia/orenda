@@ -7,10 +7,28 @@
 100
 256
 
-3e5
-3E5
-4e-7
-4E-7
+108_000_000
+257_000_000_000
+
+// Based numbers.
+
+2#100_0_11_11#
+8#677#
+16#dead_BEEF#
+16#1f#
+
+// For extra readability the use of separating spaces.
+
+16# 1f #
+7# 66_4#
+16# FF_EE #
+
+
+// C-like literals.
+
+0b1010_1100
+0b_1010_1100
+0b1_110_01_10
 
 // Real numbers.
 
@@ -20,35 +38,6 @@
 3.14
 
 400_0.14e34_0
-
-// Based numbers.
-
-2#100_0_11_11#
-
-8#677#
-
-16#dead_BEEF#
-
-16#1f#e5
-16#1f#E5
-16#1f#e-5
-16#1f#E-5
-
-7#664#e-4_3
-
-// For extra readability the use of separating spaces.
-
-7# 664 #
-16# FF_EE #
-
-16# 1f #e-5
-16# 1f # E-5
-
-// C-like literals.
-
-0b1010_1100
-0b_1010_1100
-0b1_110_01_10
 
 // Keywords
 
