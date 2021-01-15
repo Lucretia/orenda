@@ -34,7 +34,9 @@
 0o6_6_4
 0O_664
 
-0O_664
+0xdead
+0x_da_ff
+0XFAFF
 
 // Real numbers.
 

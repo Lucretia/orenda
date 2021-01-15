@@ -5,7 +5,6 @@ lexer grammar OrendaLexer;
 channels { WHITESPACE, COMMENTS }
 
 // Numbers.
-
 INTEGER_LITERAL :   NUMERAL ;
 
 fragment
@@ -14,6 +13,7 @@ NUMERAL         :   DIGIT (UNDERSCORE? DIGIT)* ;
 fragment
 DIGIT           :   [0-9] ;
 
+// Decimals with explicit bases.
 BASED_LITERAL   :   BASE HASH [ ]? BASED_NUMERAL (DOT BASED_NUMERAL)? [ ]? HASH ;
 
 fragment
@@ -25,15 +25,17 @@ BASED_NUMERAL   :   EXT_DIGIT (UNDERSCORE? EXT_DIGIT)* ;
 fragment
 EXT_DIGIT       :   DIGIT | [a-fA-F] ;
 
-BINARY_LITERAL  :   '0' [bB] '_'? BINARY_NUMERAL ;
+// Binary.
+BINARY_LITERAL  :   '0' [bB] UNDERSCORE? BINARY_NUMERAL ;
 
 fragment
-BINARY_NUMERAL   :   BINARY_DIGIT (UNDERSCORE? BINARY_DIGIT)* ;
+BINARY_NUMERAL  :   BINARY_DIGIT (UNDERSCORE? BINARY_DIGIT)* ;
 
 fragment
 BINARY_DIGIT    :   [0-1] ;
 
-OCTAL_LITERAL  :   '0' [oO] '_'? OCTAL_NUMERAL ;
+// Octal.
+OCTAL_LITERAL   :   '0' [oO] UNDERSCORE? OCTAL_NUMERAL ;
 
 fragment
 OCTAL_NUMERAL   :   OCTAL_DIGIT (UNDERSCORE? OCTAL_DIGIT)* ;
@@ -41,6 +43,16 @@ OCTAL_NUMERAL   :   OCTAL_DIGIT (UNDERSCORE? OCTAL_DIGIT)* ;
 fragment
 OCTAL_DIGIT     :   [0-7] ;
 
+// Hex.
+HEX_LITERAL   :   '0' [xX] UNDERSCORE? HEX_NUMERAL ;
+
+fragment
+HEX_NUMERAL     :   HEX_DIGIT (UNDERSCORE? HEX_DIGIT)* ;
+
+fragment
+HEX_DIGIT       :   DIGIT | [a-fA-F] ;
+
+// Real.
 REAL_LITERAL    :   NUMERAL DOT NUMERAL (EXPONENT)? ;
 
 fragment
