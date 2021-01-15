@@ -64,9 +64,10 @@ I have always liked Ada's method, other languages have taken the underscore as i
 ```ada
    A : Integer := 16#ff_ff#;   --  Fine.
    B : Integer := 16#_ffff_#;  --  Error.
+   B : Integer := 16# ffff #;  --  Error.
 ```
 
-Ada doesn't support adding an underscore between the hash and the literal. If the editor has syntax highlighting to show the hashes as different colours that helps with these.
+Ada doesn't support adding an underscore nor a space between the hashes and the literal. If the editor has syntax highlighting to show the hashes as different colours that helps with the readability of these.
 
 A strong statically compiled language should never need any kind of suffix, Ada and Odin don't, I won't.
 
