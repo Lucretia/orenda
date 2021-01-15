@@ -87,11 +87,15 @@ fragment
 UNICODE_POINT   :   [uU] HEX_NUMERAL;
 
 // Keywords.
+// Used:
+AS          :   'as' ;
 END         :   'end' ;
 FUNCTION    :   'function' ;
 IMPORT      :   'import' ;
 IS          :   'is' ;
 MODULE      :   'module' ;
+
+// Unused:
 RETURN      :   'return' ;
 TYPE        :   'type' ;
 VAR         :   'var' ;
@@ -171,6 +175,7 @@ RIGHT_PAREN :   ')' ;
 COMMA       :   ',' ;
 EQUALS      :   '=' ;
 DIARESIS    :   '..' ;
+ASSIGNMENT  :   ':=' ;
 
 NL          :   '\n' | '\r' '\n' ;
 
