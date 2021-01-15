@@ -1,4 +1,4 @@
-lexer grammar ExperimentalLexer;
+lexer grammar OrendaLexer;
 
 // Define extra channels so that the things we usually discard can be used in other tools, like comment extraction or
 // pretty printing source.

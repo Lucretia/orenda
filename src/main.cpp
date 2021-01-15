@@ -1,14 +1,14 @@
 #include <iostream>
 
 #include "antlr4-runtime.h"
-#include "ExperimentalLexer.h"
-#include "ExperimentalParser.h"
+#include "OrendaLexer.h"
+#include "OrendaParser.h"
 
 int main(int, char**) {
     antlr4::ANTLRInputStream inputStream(std::cin);
-    compiler::ExperimentalLexer lexer(&inputStream);
+    orenda::OrendaLexer lexer(&inputStream);
     antlr4::CommonTokenStream tokens(&lexer);
-    compiler::ExperimentalParser parser(&tokens);
+    orenda::OrendaParser parser(&tokens);
     antlr4::tree::ParseTree *tree = parser.unit();
 
     std::cout << "Start of parsing..." << std::endl << std::endl;

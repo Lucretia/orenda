@@ -1,7 +1,7 @@
-parser grammar ExperimentalParser;
+parser grammar OrendaParser;
 
 options {
-    tokenVocab = ExperimentalLexer;
+    tokenVocab = OrendaLexer;
 }
 
 unit                    :   (main_function | module+) NL* EOF ;
