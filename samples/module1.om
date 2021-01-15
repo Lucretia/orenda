@@ -1,0 +1,9 @@
+import Orenda.System.OS as OS,
+       Orenda.System    as System,
+       Test
+
+module Module1 is
+    A : Test.A_Type
+    Max  := 5
+    G is V
+end Module1
