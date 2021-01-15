@@ -76,6 +76,11 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::ID:
+                std::cout << "<ID>" << '\'' << token->getText() << '\'';
+
+                break;
+
             default:
                 std::cout << token->getType() << '\'' << token->getText() << '\'';
         }
