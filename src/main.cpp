@@ -29,6 +29,11 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::COMMENT:
+                std::cout << "<COMMENT>" << '\'' << token->getText() << '\'';
+
+                break;
+
             case orenda::OrendaLexer::INTEGER_LIT:
                 std::cout << "<INTEGER_LIT>" << '\'' << token->getText() << '\'';
 
