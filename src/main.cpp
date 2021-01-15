@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
             token->getType() != antlr4::Token::EOF;
             token = lexer.nextToken()) {
 
-        std::cout << "Token: " << std::setw(4) << std::left << token->getType();
+        std::cout << "Token: " << std::setw(20) << std::left;
 
         switch (token->getType()) {
             case orenda::OrendaLexer::NL:
@@ -22,14 +22,12 @@ int main(int argc, char* argv[]) {
 
                 break;
 
-            case orenda::OrendaLexer::WHITESPACE:
             case orenda::OrendaLexer::WS:
                 std::cout << "<WS>";
 
                 break;
-
             default:
-                std::cout << '\'' << token->getText() << '\'';
+                std::cout << token->getType() << '\'' << token->getText() << '\'';
         }
 
         std::cout << std::endl;
