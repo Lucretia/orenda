@@ -35,3 +35,14 @@
 16#1f#E-5
 
 7#664#e-4_3
+
+// Keywords
+
+import
+is
+end
+module
+var
+type
+function
+return

@@ -49,6 +49,17 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::END:
+            case orenda::OrendaLexer::FUNCTION:
+            case orenda::OrendaLexer::IMPORT:
+            case orenda::OrendaLexer::IS:
+            case orenda::OrendaLexer::MODULE:
+            case orenda::OrendaLexer::RETURN:
+            case orenda::OrendaLexer::TYPE:
+            case orenda::OrendaLexer::VAR:
+                std::cout << "<KEYWORD>" << '\'' << token->getText() << '\'';
+
+                break;
 
             default:
                 std::cout << token->getType() << '\'' << token->getText() << '\'';
