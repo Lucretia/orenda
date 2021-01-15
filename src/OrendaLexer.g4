@@ -30,6 +30,17 @@ BASED_NUMERAL   :   EXT_DIGIT (UNDERSCORE? EXT_DIGIT)* ;
 fragment
 EXT_DIGIT       :   DIGIT | [a-fA-F] ;
 
+BINARY_LITERAL  :   '0' [bB] '_'? BINARY_NUMERAL ;
+
+fragment
+BINARY_NUMERAL   :   BINARY_DIGIT (UNDERSCORE? BINARY_DIGIT)* ;
+
+fragment
+BINARY_DIGIT    :   [0-1] ;
+
+fragment
+OCTAL_DIGIT     :   [0-7] ;
+
 // Keywords.
 END         :   'end' ;
 FUNCTION    :   'function' ;

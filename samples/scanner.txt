@@ -44,6 +44,12 @@
 16# 1f #e-5
 16# 1f # E-5
 
+// C-like literals.
+
+0b1010_1100
+0b_1010_1100
+0b1_110_01_10
+
 // Keywords
 
 import

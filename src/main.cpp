@@ -49,6 +49,11 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::BINARY_LITERAL:
+                std::cout << "<BINARY_LITERAL>" << '\'' << token->getText() << '\'';
+
+                break;
+
             case orenda::OrendaLexer::END:
             case orenda::OrendaLexer::FUNCTION:
             case orenda::OrendaLexer::IMPORT:
