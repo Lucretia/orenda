@@ -55,7 +55,7 @@ type
 function
 return
 
-// Identifiers
+// Identifiers.
 
 Orenda
 This_Is_An_Identifier
@@ -66,3 +66,32 @@ thisCanBeToo
 // Delimiters
 
 # * - * / ^ : ; . .. _ ? ( ) , =
+
+// Runes.
+
+'\n'
+'\t'
+'\u20c3'
+'g'
+' '
+'λ'
+'ᱟ'
+// This is a tab character '	'
+'\t'
+//'''
+'\''
+//'"'
+'\"'
+''
+'😂'
+
+// Strings.
+
+""
+" "
+"\tHello\n"
+"मैं काँच खा सकता हूँ और मुझे उससे कोई चोट नहीं पहुंचती"
+"\""
+//"""
+//"'"
+"\"Hello\" 😂 \u20c3"

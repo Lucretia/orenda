@@ -58,6 +58,34 @@ REAL_LITERAL    :   NUMERAL DOT NUMERAL (EXPONENT)? ;
 fragment
 EXPONENT        :   [Ee] MINUS? NUMERAL ;
 
+// Rune - Dummy.
+RUNE_LITERAL    :   '\'' SINGLE_RUNE? '\'' ;
+
+fragment
+SINGLE_QUOTE    :   '\'' ;
+
+fragment
+SINGLE_RUNE     :   (~[\t\r\n"'] | ESCAPE_SEQUENCE) ;
+
+// String - Dummy.
+STRING_LITERAL  :   DOUBLE_QUOTE SINGLE_RUNE* DOUBLE_QUOTE ;
+
+fragment
+DOUBLE_QUOTE    :   '"' ;
+
+// Escape sequences.
+fragment
+ESCAPE_SEQUENCE :   ESCAPE (CONTROL_CODE | UNICODE_POINT | ["']) ;
+
+fragment
+ESCAPE          :   '\\' ;
+
+fragment
+CONTROL_CODE    :   [rnt] ;
+
+fragment
+UNICODE_POINT   :   [uU] HEX_NUMERAL;
+
 // Keywords.
 END         :   'end' ;
 FUNCTION    :   'function' ;

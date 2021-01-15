@@ -161,6 +161,16 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::RUNE_LITERAL:
+                std::cout << "<RUNE_LITERAL>" << "->" << token->getText() << "<-";
+
+                break;
+
+            case orenda::OrendaLexer::STRING_LITERAL:
+                std::cout << "<STRING_LITERAL>" << "->" << token->getText() << "<-";
+
+                break;
+
             default:
                 std::cout << token->getType() << '\'' << token->getText() << '\'';
         }
