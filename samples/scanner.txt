@@ -62,3 +62,7 @@ This_Is_An_Identifier
 this_is_another_one
 ThisIsAnother
 thisCanBeToo
+
+// Delimiters
+
+# * - * / ^ : ; . .. _ ? ( ) , =
