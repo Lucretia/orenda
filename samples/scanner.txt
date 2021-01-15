@@ -36,6 +36,14 @@
 
 7#664#e-4_3
 
+// For extra readability the use of separating spaces.
+
+7# 664 #
+16# FF_EE #
+
+16# 1f #e-5
+16# 1f # E-5
+
 // Keywords
 
 import
