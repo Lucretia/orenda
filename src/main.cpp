@@ -72,6 +72,10 @@ int main(int argc, char* argv[]) {
             case orenda::OrendaLexer::RETURN:
             case orenda::OrendaLexer::TYPE:
             case orenda::OrendaLexer::VAR:
+            case orenda::OrendaLexer::INTEGER:
+            case orenda::OrendaLexer::REAL:
+            case orenda::OrendaLexer::RUNE:
+            case orenda::OrendaLexer::STRING:
                 std::cout << "<KEYWORD>" << '\'' << token->getText() << '\'';
 
                 break;

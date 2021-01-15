@@ -95,6 +95,10 @@ MODULE      :   'module' ;
 RETURN      :   'return' ;
 TYPE        :   'type' ;
 VAR         :   'var' ;
+INTEGER     :   'integer' ;
+REAL        :   'real' ;
+RUNE        :   'rune' ;
+STRING      :   'string' ;
 
 // Identifiers.
 

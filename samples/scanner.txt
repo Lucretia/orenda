@@ -54,6 +54,10 @@ var
 type
 function
 return
+integer
+real
+rune
+string
 
 // Identifiers.
 
