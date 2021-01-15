@@ -64,8 +64,8 @@ numeric_literals        :   integer_literal
                         |   real_literal
                         ;
 
-integer_literal         :   INTEGER_LIT ;
+integer_literal         :   INTEGER_LITERAL ;
 
-real_literal            :   REAL_LIT ;
+real_literal            :   REAL_LITERAL ;
 
 types                   :   ID ;

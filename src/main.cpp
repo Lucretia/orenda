@@ -34,15 +34,21 @@ int main(int argc, char* argv[]) {
 
                 break;
 
-            case orenda::OrendaLexer::INTEGER_LIT:
-                std::cout << "<INTEGER_LIT>" << '\'' << token->getText() << '\'';
+            case orenda::OrendaLexer::INTEGER_LITERAL:
+                std::cout << "<INTEGER_LITERAL>" << '\'' << token->getText() << '\'';
 
                 break;
 
-            case orenda::OrendaLexer::REAL_LIT:
-                std::cout << "<REAL_LIT>" << '\'' << token->getText() << '\'';
+            case orenda::OrendaLexer::REAL_LITERAL:
+                std::cout << "<REAL_LITERAL>" << '\'' << token->getText() << '\'';
 
                 break;
+
+            case orenda::OrendaLexer::BASED_LITERAL:
+                std::cout << "<BASED_LITERAL>" << '\'' << token->getText() << '\'';
+
+                break;
+
 
             default:
                 std::cout << token->getType() << '\'' << token->getText() << '\'';
