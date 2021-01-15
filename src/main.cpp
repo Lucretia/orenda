@@ -54,6 +54,11 @@ int main(int argc, char* argv[]) {
 
                 break;
 
+            case orenda::OrendaLexer::OCTAL_LITERAL:
+                std::cout << "<OCTAL_LITERAL>" << '\'' << token->getText() << '\'';
+
+                break;
+
             case orenda::OrendaLexer::END:
             case orenda::OrendaLexer::FUNCTION:
             case orenda::OrendaLexer::IMPORT:

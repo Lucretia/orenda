@@ -33,6 +33,11 @@ BINARY_NUMERAL   :   BINARY_DIGIT (UNDERSCORE? BINARY_DIGIT)* ;
 fragment
 BINARY_DIGIT    :   [0-1] ;
 
+OCTAL_LITERAL  :   '0' [oO] '_'? OCTAL_NUMERAL ;
+
+fragment
+OCTAL_NUMERAL   :   OCTAL_DIGIT (UNDERSCORE? OCTAL_DIGIT)* ;
+
 fragment
 OCTAL_DIGIT     :   [0-7] ;
 
