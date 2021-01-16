@@ -94,15 +94,21 @@ FUNCTION    :   'function' ;
 IMPORT      :   'import' ;
 IS          :   'is' ;
 MODULE      :   'module' ;
+UNSAFE      :   'unsafe' ;
 
 // Unused:
 RETURN      :   'return' ;
 TYPE        :   'type' ;
 VAR         :   'var' ;
+
 INTEGER     :   'integer' ;
 REAL        :   'real' ;
 RUNE        :   'rune' ;
 STRING      :   'string' ;
+MATRIX      :   'matrix' ;
+VECTOR      :   'vector' ;
+ARRAY       :   'array' ;
+LIST        :   'list' ;
 
 // Identifiers.
 
