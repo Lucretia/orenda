@@ -8,9 +8,9 @@ source_unit             :   module NL* EOF
                         ;
 
 module                  :   NL* import_list? NL*
-                            MODULE qualified_identifier IS NL*
+                            qualified_identifier COLON UNSAFE? MODULE IS NL*
                                 (declarations NL*)*
-                            END qualified_identifier NL*
+                            qualified_identifier COLON END NL*
                         ;
 
 import_list             :   IMPORT qualified_identifier (AS ID)* (COMMA NL*
