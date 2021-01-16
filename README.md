@@ -1,8 +1,15 @@
 # Orenda: An experimental programming language
 
-My attempt at creating a new programming language a bit at a time by experimenting with various ideas.
+> Orenda: *noun*
+> 1. a supernatural force believed by the Iroquois Indians to be present, in varying degrees, in all objects or persons, and to be the spiritual force by which human accomplishment is attained or accounted for.
+>
+> -- <cite>[Dictionary.com](https://www.dictionary.com/browse/orenda?s=t)</cite>
 
-This documentation will evolve over time until I get to a point whereby a new implementation, and therefore github project, will be started. Expect this documentation to be a bit rambly in places and maybe not even complete thoughts.
+This is my attempt at creating a new programming language a bit at a time by experimenting with various ideas.
+
+**N.B:** Nothing in this language is set in stone right now, it **is** likely to change.
+
+This documentation will evolve over time until I get to a point whereby a new implementation, and therefore github project, will be started. Expect this documentation to be a bit rambly in places and maybe not even completely thought out.
 
 ## Background
 
@@ -12,6 +19,12 @@ I have talked with other Ada users before about an Ada like language that takes 
 
 After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzDzKdB0), I realise that whilst the core language should be small, it should provide enough capability to extend the language itself.
 
+## Key aspirations for the language
+
+* Simple.
+* Small.
+* Composable.
+* Make programming life easier.
 ## Documentation
 
 These are my notes / ramblings:
@@ -37,10 +50,10 @@ These are my notes / ramblings:
 
 ## TODO
 
-1. Give this thing a name.
-2. Create an AST.
-3. Add basic semantic analysis.
-4. Convert to LLVM IR.
+* [X] Give this thing a name.
+* [ ] Create an AST.
+* [ ] Add basic semantic analysis.
+* [ ] Convert to LLVM IR.
 
 ## Building
 
@@ -55,12 +68,13 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## Tested with
 
-* Clang 10.
+* Clang 10
 * GCC 9.3.0
+* GCC 10.2.0
 
 ## [Current version](http://www.semver.org)
 
-v0.0.84
+v0.0.88
 
 ## Contributions
 
