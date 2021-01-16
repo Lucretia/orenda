@@ -82,6 +82,103 @@ test.adb:2:19: base not 2-16
 gnatmake: "test.adb" compilation error
 ```
 
+# What have I gone for?
+
+In Orenda decimals can be specified with a base in Ada-like or a Cish-like manner.
+
+```orenda
+// Normal decimal literals.
+10
+100_000
+
+// Decimals with specified bases.
+2#100_0_11_11#
+8#677#
+16#dead_BEEF#
+
+16# 1f #
+7# 66_4#
+16# FF_EE #
+```
+
+As can be seen in the above code, a space can be placed after the hash following the base or before the final hash, this aids in readability.
+
+In the following Cish-like literals, an underscore can be placed between the base and the number, again, for readability.
+
+```orenda
+// Binary literals.
+0b1010_1100
+0b_1010_1100
+0b1_110_01_10
+
+// Octal literals.
+0o664
+0o6_6_4
+0O_664
+
+// Hexadecimal literals.
+0xdead
+0x_da_ff
+0XFAFF
+```
+
+Real numbers are specified in a similar manner.
+
+```orenda
+3.14
+
+400_0.14e34_0
+
+10.2E-7
+```
+
+Identifiers are specified as follows.
+
+```orenda
+Orenda
+This_Is_An_Identifier
+this_is_another_one
+ThisIsAnother
+thisCanBeToo
+
+Id1.Id2.Id3
+```
+
+As can be seen above, qualified identifiers are composed of multiple identifiers separated with dots.
+
+Unicode is built into the language and all source is Unicode, UTF-8. Like C there are certain escape sequences (to be expanded upon).
+
+```orenda
+// Runes.
+
+'\n'
+'\t'
+'\u20c3'
+'g'
+' '
+'λ'
+'ᱟ'
+// This is a tab character '   '
+'\t'
+//'''
+'\''
+//'"'
+'\"'
+''
+'😂'
+
+// Strings.
+
+""
+" "
+"\tHello\n"
+"मैं काँच खा सकता हूँ और मुझे उससे कोई चोट नहीं पहुंचती"
+"\""
+//"""
+//"'"
+"\"Hello\" 😂 \u20c3"
+```
+
 ## References
 
 * [Ada](http://www.ada-auth.org/standards/2xrm/html/RM-2-4-1.html)
