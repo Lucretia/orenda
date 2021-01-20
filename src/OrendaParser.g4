@@ -21,16 +21,24 @@ qualified_identifier    :   (ID DOT)* ID ;
 
 declarations            :   type_decl
                         |   object_decl
+                        |   function_decl
                         ;
 
-main_function_decl      :   FUNCTION ID formal_params? IS NL*
+// TODO - Check there is no receiver for a main function.
+main_function_decl      :   function_decl ;
+
+// TODO - This enables nested functions, do we want them to allow receivers?
+function_decl           :   FUNCTION receiver? ID formal_params? IS NL*
                                 (declarations NL*)*
                             END ID NL*
                         ;
 
-formal_params           :   LEFT_PAREN (formal_parameter (COMMA formal_parameter)*)* RIGHT_PAREN (COLON qualified_identifier)* ;
+formal_params           :   LEFT_PAREN (NL* formal_parameter (COMMA NL* formal_parameter)* NL*)* RIGHT_PAREN
+                                (NL* COLON NL* qualified_identifier)* ;
 
-formal_parameter        :   ID (SEMICOLON ID)* COLON (IN | IN OUT | OUT) type ;
+formal_parameter        :   ID (COMMA ID)* COLON (IN | IN OUT | OUT) type ;
+
+receiver                :   LEFT_PAREN ID COLON ID RIGHT_PAREN ;
 
 type_decl               :   TYPE ID IS type ;
 
