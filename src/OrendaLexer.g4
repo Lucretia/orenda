@@ -92,9 +92,11 @@ AS          :   'as' ;
 END         :   'end' ;
 FUNCTION    :   'function' ;
 IMPORT      :   'import' ;
+IN          :   'in' ;
 IS          :   'is' ;
 MODULE      :   'module' ;
 MUTABLE     :   'mutable' ;
+OUT         :   'out' ;
 UNSAFE      :   'unsafe' ;
 
 // Unused:
