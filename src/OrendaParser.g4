@@ -19,15 +19,14 @@ import_list             :   IMPORT qualified_identifier (AS ID)* (COMMA NL*
 
 qualified_identifier    :   (ID DOT)* ID ;
 
-declarations            :   constant_decl
-                        |   type_decl
-                        |   var_decl
+declarations            :   type_decl
+                        |   object_decl
                         ;
 
-constant_decl           :   ID ASSIGNMENT constant_expr ;
+// constant_decl           :   ID ASSIGNMENT constant_expr ;
 
-constant_expr           :   INTEGER_LITERAL
-                        |   REAL_LITERAL ; // TODO
+// constant_expr           :   INTEGER_LITERAL
+//                         |   REAL_LITERAL ; // TODO
 
 type_decl               :   ID IS type ;
 
@@ -35,7 +34,7 @@ type                    :   qualified_identifier ;
 
 
 // TODO - Add default initialisation.
-var_decl            :   identifier_list COLON type ;
+object_decl             :   identifier_list COLON MUTABLE? type ;
 
-identifier_list     :   ID (COMMA ID)* ;
+identifier_list         :   ID (COMMA ID)* ;
 

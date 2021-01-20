@@ -94,6 +94,7 @@ FUNCTION    :   'function' ;
 IMPORT      :   'import' ;
 IS          :   'is' ;
 MODULE      :   'module' ;
+MUTABLE     :   'mutable' ;
 UNSAFE      :   'unsafe' ;
 
 // Unused:
