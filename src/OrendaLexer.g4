@@ -44,7 +44,7 @@ fragment
 OCTAL_DIGIT     :   [0-7] ;
 
 // Hex.
-HEX_LITERAL   :   '0' [xX] UNDERSCORE? HEX_NUMERAL ;
+HEX_LITERAL     :   '0' [xX] UNDERSCORE? HEX_NUMERAL ;
 
 fragment
 HEX_NUMERAL     :   HEX_DIGIT (UNDERSCORE? HEX_DIGIT)* ;
@@ -88,55 +88,54 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 
 // Keywords.
 // Used:
-AND         :   'and' ;
-AS          :   'as' ;
-DIV         :   'div' ;
-END         :   'end' ;
-FUNCTION    :   'function' ;
-IMPORT      :   'import' ;
-IN          :   'in' ;
-IS          :   'is' ;
-MOD         :   'mod' ;
-MODULE      :   'module' ;
-MUTABLE     :   'mutable' ;
-NOT         :   'not' ;
-OR          :   'or' ;
-OUT         :   'out' ;
-TYPE        :   'type' ;
-UNSAFE      :   'unsafe' ;
+AND             :   'and' ;
+AS              :   'as' ;
+DIV             :   'div' ;
+END             :   'end' ;
+FUNCTION        :   'function' ;
+IMPORT          :   'import' ;
+IN              :   'in' ;
+IS              :   'is' ;
+MOD             :   'mod' ;
+MODULE          :   'module' ;
+MUTABLE         :   'mutable' ;
+NOT             :   'not' ;
+OR              :   'or' ;
+OUT             :   'out' ;
+TYPE            :   'type' ;
+UNSAFE          :   'unsafe' ;
 
-INTEGER     :   'integer' ;
-REAL        :   'real' ;
-RUNE        :   'rune' ;
-STRING      :   'string' ;
+INTEGER         :   'integer' ;
+REAL            :   'real' ;
+RUNE            :   'rune' ;
+STRING          :   'string' ;
 
 // Unused:
-RETURN      :   'return' ;
-
-MATRIX      :   'matrix' ;
-VECTOR      :   'vector' ;
-ARRAY       :   'array' ;
-LIST        :   'list' ;
+RETURN          :   'return' ;
+MATRIX          :   'matrix' ;
+VECTOR          :   'vector' ;
+ARRAY           :   'array' ;
+LIST            :   'list' ;
 
 // Identifiers.
 
 fragment
-LETTER_UPPERCASE  : [\p{Lu}] ;
+LETTER_UPPERCASE        : [\p{Lu}] ;
 
 fragment
-LETTER_LOWERCASE  : [\p{Ll}] ;
+LETTER_LOWERCASE        : [\p{Ll}] ;
 
 fragment
-LETTER_TITLECASE  : [\p{Lt}] ;
+LETTER_TITLECASE        : [\p{Lt}] ;
 
 fragment
-LETTER_MODIFIER   : [\p{Lm}] ;
+LETTER_MODIFIER         : [\p{Lm}] ;
 
 fragment
-LETTER_OTHER      : [\p{Lo}] ;
+LETTER_OTHER            : [\p{Lo}] ;
 
 fragment
-NUMBER_LETTER     : [\p{Nl}] ;
+NUMBER_LETTER           : [\p{Nl}] ;
 
 fragment
 MARK_NON_SPACING        : [\p{Mn}] ;
@@ -151,55 +150,55 @@ fragment
 PUNCTUATION_CONNECTOR   : [\p{Pc}] ;
 
 fragment
-ID_START    :   ( LETTER_UPPERCASE
-                | LETTER_LOWERCASE
-                | LETTER_TITLECASE
-                | LETTER_MODIFIER
-                | LETTER_OTHER
-                | NUMBER_LETTER
-                )
-                ;
+ID_START        :   ( LETTER_UPPERCASE
+                    | LETTER_LOWERCASE
+                    | LETTER_TITLECASE
+                    | LETTER_MODIFIER
+                    | LETTER_OTHER
+                    | NUMBER_LETTER
+                    )
+                    ;
 
 fragment
-ID_EXTEND   :   ( MARK_NON_SPACING
-                | MARK_SPACING_COMBINING
-                | NUMBER_DECIMAL
-                | PUNCTUATION_CONNECTOR
-                )
+ID_EXTEND       :   ( MARK_NON_SPACING
+                    | MARK_SPACING_COMBINING
+                    | NUMBER_DECIMAL
+                    | PUNCTUATION_CONNECTOR
+                    )
+                    ;
+
+ID              :   ID_START ( ID_START | ID_EXTEND )*
                 ;
 
-ID          :   ID_START ( ID_START | ID_EXTEND )*
-            ;
-
 // Symbols.
-HASH        :   '#' ;
+HASH            :   '#' ;
 
-PLUS        :   '+' ;
-MINUS       :   '-' ;
-TIMES       :   '*' ;
-DIVIDE      :   '/' ;
-CARET       :   '^' ;
-COLON       :   ':' ;
-SEMICOLON   :   ';' ;
-DOT         :   '.' ;
-UNDERSCORE  :   '_' ;
-TYPE_QUERY  :   '?' ;
-LEFT_PAREN  :   '(' ;
-RIGHT_PAREN :   ')' ;
-LEFT_BRACKET  :   '[' ;
-RIGHT_BRACKET :   ']' ;
-COMMA       :   ',' ;
-EQUALS      :   '=' ;
-NOT_EQUALS  :   '!=' ;
-LESS_THAN   :   '<' ;
-LT_EQUALS   :   '<=' ;
-GREATER_THAN:   '>' ;
-GT_EQUALS   :   '>=' ;
-DIARESIS    :   '..' ;
-ASSIGNMENT  :   ':=' ;
+PLUS            :   '+' ;
+MINUS           :   '-' ;
+TIMES           :   '*' ;
+DIVIDE          :   '/' ;
+CARET           :   '^' ;
+COLON           :   ':' ;
+SEMICOLON       :   ';' ;
+DOT             :   '.' ;
+UNDERSCORE      :   '_' ;
+TYPE_QUERY      :   '?' ;
+LEFT_PAREN      :   '(' ;
+RIGHT_PAREN     :   ')' ;
+LEFT_BRACKET    :   '[' ;
+RIGHT_BRACKET   :   ']' ;
+COMMA           :   ',' ;
+EQUALS          :   '=' ;
+NOT_EQUALS      :   '!=' ;
+LESS_THAN       :   '<' ;
+LT_EQUALS       :   '<=' ;
+GREATER_THAN    :   '>' ;
+GT_EQUALS       :   '>=' ;
+DIARESIS        :   '..' ;
+ASSIGNMENT      :   ':=' ;
 
-NL          :   '\n' | '\r' '\n' ;
+NL              :   '\n' | '\r' '\n' ;
 
-WS          :   [ \t\f]+ -> channel(WHITESPACE) ;
+WS              :   [ \t\f]+ -> channel(WHITESPACE) ;
 
-COMMENT     :   '//' ~[\r\n]* -> channel(COMMENTS) ;
+COMMENT         :   '//' ~[\r\n]* -> channel(COMMENTS) ;
