@@ -88,25 +88,31 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 
 // Keywords.
 // Used:
+AND         :   'and' ;
 AS          :   'as' ;
+DIV         :   'div' ;
 END         :   'end' ;
 FUNCTION    :   'function' ;
 IMPORT      :   'import' ;
 IN          :   'in' ;
 IS          :   'is' ;
+MOD         :   'mod' ;
 MODULE      :   'module' ;
 MUTABLE     :   'mutable' ;
+NOT         :   'not' ;
+OR          :   'or' ;
 OUT         :   'out' ;
-UNSAFE      :   'unsafe' ;
-
-// Unused:
-RETURN      :   'return' ;
 TYPE        :   'type' ;
+UNSAFE      :   'unsafe' ;
 
 INTEGER     :   'integer' ;
 REAL        :   'real' ;
 RUNE        :   'rune' ;
 STRING      :   'string' ;
+
+// Unused:
+RETURN      :   'return' ;
+
 MATRIX      :   'matrix' ;
 VECTOR      :   'vector' ;
 ARRAY       :   'array' ;
@@ -180,8 +186,15 @@ UNDERSCORE  :   '_' ;
 TYPE_QUERY  :   '?' ;
 LEFT_PAREN  :   '(' ;
 RIGHT_PAREN :   ')' ;
+LEFT_BRACKET  :   '[' ;
+RIGHT_BRACKET :   ']' ;
 COMMA       :   ',' ;
 EQUALS      :   '=' ;
+NOT_EQUALS  :   '!=' ;
+LESS_THAN   :   '<' ;
+LT_EQUALS   :   '<=' ;
+GREATER_THAN:   '>' ;
+GT_EQUALS   :   '>=' ;
 DIARESIS    :   '..' ;
 ASSIGNMENT  :   ':=' ;
 
