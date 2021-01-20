@@ -23,12 +23,7 @@ declarations            :   type_decl
                         |   object_decl
                         ;
 
-// constant_decl           :   ID ASSIGNMENT constant_expr ;
-
-// constant_expr           :   INTEGER_LITERAL
-//                         |   REAL_LITERAL ; // TODO
-
-type_decl               :   ID IS type ;
+type_decl               :   TYPE ID IS type ;
 
 type                    :   qualified_identifier ;
 
