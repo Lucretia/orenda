@@ -8,7 +8,7 @@ source_unit             :   module NL* EOF
                         ;
 
 module                  :   NL* import_list? NL*
-                            MODULE qualified_identifier IS NL*
+                            UNSAFE? MODULE qualified_identifier IS NL*
                                 (declarations NL*)*
                             END qualified_identifier NL*
                         ;
