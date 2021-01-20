@@ -100,7 +100,6 @@ UNSAFE      :   'unsafe' ;
 // Unused:
 RETURN      :   'return' ;
 TYPE        :   'type' ;
-VAR         :   'var' ;
 
 INTEGER     :   'integer' ;
 REAL        :   'real' ;
