@@ -4,7 +4,7 @@ options {
     tokenVocab = OrendaLexer;
 }
 
-source_unit             :   module NL* EOF
+source_unit             :   (module | main_function_decl) NL* EOF
                         ;
 
 module                  :   NL* import_list? NL*
@@ -23,10 +23,18 @@ declarations            :   type_decl
                         |   object_decl
                         ;
 
+main_function_decl      :   FUNCTION ID formal_params? IS NL*
+                                (declarations NL*)*
+                            END ID NL*
+                        ;
+
+formal_params           :   LEFT_PAREN (formal_parameter (COMMA formal_parameter)*)* RIGHT_PAREN (COLON qualified_identifier)* ;
+
+formal_parameter        :   ID (SEMICOLON ID)* COLON type ;
+
 type_decl               :   TYPE ID IS type ;
 
 type                    :   qualified_identifier ;
-
 
 // TODO - Add default initialisation.
 object_decl             :   identifier_list COLON MUTABLE? type ;

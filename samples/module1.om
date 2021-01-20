@@ -5,5 +5,5 @@ import Orenda.System.OS as OS,
 unsafe module Module1 is
     A : mutable Test.A_Type
 //    Max  := 5
-    G is V
+    type G is V
 end Module1
