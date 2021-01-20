@@ -2,8 +2,8 @@ import Orenda.System.OS as OS,
        Orenda.System    as System,
        Test
 
-Root.Module1 : unsafe module is
+module Module1 is
     A : Test.A_Type
     Max  := 5
     G is V
-Root.Module1 : end
+end Module1
