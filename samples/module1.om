@@ -10,5 +10,8 @@ unsafe module Module1 is
     function (r : A) do_something (a : in B,
                                    b, c : out C
                                    ) is
+
+        function internal is
+        end internal
     end do_something
 end Module1
