@@ -3,7 +3,8 @@ import Orenda.System.OS as OS,
        Test
 
 unsafe module Module1 is
-    A : mutable Test.A_Type
+    A : mutable Test.A_Type := "blah"
+    B : Blah := 5
 //    Max  := 5
     type G is V
 
