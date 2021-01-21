@@ -53,9 +53,12 @@ identifier_list         :   ID (COMMA ID)* ;
 statements              :   statement NL* (statement NL*)* ;
 
 statement               :   assignment_stmt
+                        |   function_call_stmt
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
+
+function_call_stmt      :   designator (LEFT_PAREN expr_list? RIGHT_PAREN)? ;
 
 // Expressions.
 expression              :   NL* simple_expr (relation simple_expr)* ;
