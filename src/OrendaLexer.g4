@@ -90,9 +90,13 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 // Used:
 AND             :   'and' ;
 AS              :   'as' ;
+CASE            :   'case' ;
 DIV             :   'div' ;
+ELSE            :   'else' ;
+ELSIF           :   'elsif' ;
 END             :   'end' ;
 FUNCTION        :   'function' ;
+IF              :   'if' ;
 IMPORT          :   'import' ;
 IN              :   'in' ;
 IS              :   'is' ;
@@ -102,8 +106,10 @@ MUTABLE         :   'mutable' ;
 NOT             :   'not' ;
 OR              :   'or' ;
 OUT             :   'out' ;
+THEN            :   'then' ;
 TYPE            :   'type' ;
 UNSAFE          :   'unsafe' ;
+WHEN            :   'when' ;
 
 INTEGER         :   'integer' ;
 REAL            :   'real' ;
@@ -196,6 +202,7 @@ GREATER_THAN    :   '>' ;
 GT_EQUALS       :   '>=' ;
 DIARESIS        :   '..' ;
 ASSIGNMENT      :   ':=' ;
+RIGHT_ARROW     :   '=>' ;
 
 NL              :   '\n' | '\r' '\n' ;
 

@@ -54,11 +54,37 @@ statements              :   statement NL* (statement NL*)* ;
 
 statement               :   assignment_stmt
                         |   function_call_stmt
+                        |   if_statement_stmt
+                        |   case_stmt
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
 
 function_call_stmt      :   designator (LEFT_PAREN expr_list? RIGHT_PAREN)? ;
+
+// TODO - Add labels to beginning and end of statement blocks.
+if_statement_stmt       :   IF expression THEN
+                                statements
+                            (ELSIF expression THEN
+                                statements)*
+                            (ELSE
+                                statements)?
+                            END IF
+                        ;
+
+case_stmt               :   CASE expression IN
+                                case_options+
+                            (ELSE
+                                statements)?
+                            END CASE
+                        ;
+
+case_options            :   WHEN (case_labels (COMMA case_labels)* RIGHT_ARROW
+                                statements)?
+                        ;
+
+case_labels             :   expression (DIARESIS expression)? ;
+
 
 // Expressions.
 expression              :   NL* simple_expr (relation simple_expr)* ;
