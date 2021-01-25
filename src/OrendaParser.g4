@@ -57,6 +57,7 @@ statement               :   assignment_stmt
                         |   if_statement_stmt
                         |   case_stmt
                         |   while_loop_stmt
+                        |   repeat_loop_stmt
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
@@ -89,6 +90,13 @@ case_labels             :   expression (DIARESIS expression)? ;
 while_loop_stmt         :   WHILE expression LOOP
                                 statements
                             END
+                        ;
+
+// TODO - Repeat loops can be implemented with an exit statement with an expression.
+// TODO - Remove in favour of a general loop syntax with an exit statement?
+repeat_loop_stmt        :   LOOP
+                                statements
+                            UNTIL expression
                         ;
 
 // Expressions.
