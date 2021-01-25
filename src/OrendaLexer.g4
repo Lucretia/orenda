@@ -90,11 +90,13 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 // Used:
 AND             :   'and' ;
 AS              :   'as' ;
+BY              :   'by' ;
 CASE            :   'case' ;
 DIV             :   'div' ;
 ELSE            :   'else' ;
 ELSIF           :   'elsif' ;
 END             :   'end' ;
+FOR             :   'for' ;
 FUNCTION        :   'function' ;
 IF              :   'if' ;
 IMPORT          :   'import' ;

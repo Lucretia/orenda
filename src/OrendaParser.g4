@@ -58,6 +58,7 @@ statement               :   assignment_stmt
                         |   case_stmt
                         |   while_loop_stmt
                         |   repeat_loop_stmt
+                        |   for_loop_stmt
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
@@ -85,7 +86,7 @@ case_options            :   WHEN (case_labels (COMMA case_labels)* RIGHT_ARROW
                                 statements)?
                         ;
 
-case_labels             :   expression (DIARESIS expression)? ;
+case_labels             :   constant_expr (DIARESIS constant_expr)? ;
 
 while_loop_stmt         :   WHILE expression LOOP
                                 statements
@@ -99,7 +100,15 @@ repeat_loop_stmt        :   LOOP
                             UNTIL expression
                         ;
 
+// TODO - Needs to be able to take general ranges and iterators.
+for_loop_stmt           :   FOR ID ASSIGNMENT expression DIARESIS expression (BY constant_expr)? LOOP
+                                statements
+                            END
+                        ;
+
 // Expressions.
+constant_expr           :   expression ;
+
 expression              :   NL* simple_expr (relation simple_expr)* ;
 
 simple_expr             :   NL* (PLUS | MINUS)? term (add_op term)* ;
