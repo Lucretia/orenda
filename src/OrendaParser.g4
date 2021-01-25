@@ -56,6 +56,7 @@ statement               :   assignment_stmt
                         |   function_call_stmt
                         |   if_statement_stmt
                         |   case_stmt
+                        |   while_loop_stmt
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
@@ -85,6 +86,10 @@ case_options            :   WHEN (case_labels (COMMA case_labels)* RIGHT_ARROW
 
 case_labels             :   expression (DIARESIS expression)? ;
 
+while_loop_stmt         :   WHILE expression LOOP
+                                statements
+                            END
+                        ;
 
 // Expressions.
 expression              :   NL* simple_expr (relation simple_expr)* ;

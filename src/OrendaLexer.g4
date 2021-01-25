@@ -100,6 +100,7 @@ IF              :   'if' ;
 IMPORT          :   'import' ;
 IN              :   'in' ;
 IS              :   'is' ;
+LOOP            :   'loop' ;
 MOD             :   'mod' ;
 MODULE          :   'module' ;
 MUTABLE         :   'mutable' ;
@@ -110,6 +111,7 @@ THEN            :   'then' ;
 TYPE            :   'type' ;
 UNSAFE          :   'unsafe' ;
 WHEN            :   'when' ;
+WHILE           :   'while' ;
 
 INTEGER         :   'integer' ;
 REAL            :   'real' ;
