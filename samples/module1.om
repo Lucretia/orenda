@@ -27,6 +27,16 @@ unsafe module Module1 is
                 exit when a = 2
             end loop
         end internal
+
+        type monochrome is enumeration
+            black,
+            white
+        end enumeration
+
+        type colours is enumeration
+          (monochrome)
+            red, green, blue
+        end enumeration
     end do_something
 
     type f is array

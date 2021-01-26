@@ -98,6 +98,7 @@ DIV             :   'div' ;
 ELSE            :   'else' ;
 ELSIF           :   'elsif' ;
 END             :   'end' ;
+ENUMERATION     :   'enumeration' ;
 EXIT            :   'exit' ;
 FOR             :   'for' ;
 FUNCTION        :   'function' ;

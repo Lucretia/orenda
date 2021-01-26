@@ -45,17 +45,27 @@ type_decl               :   TYPE ID IS type ;
 type                    :   qualified_identifier
                         |   array_type
                         |   record_type
+                        |   enum_type
                         ;
 
 array_type              :   ARRAY NL* (LEFT_BRACKET NL* constant_expr (COMMA NL* constant_expr)* NL* RIGHT_BRACKET)? NL* OF type
                         ;
 
-record_type             :   RECORD NL* (LEFT_PAREN qualified_identifier RIGHT_PAREN)? NL*
+record_type             :   RECORD NL* base_type? NL*
                                 (field_list NL*)+
                             END
                         ;
 
+base_type               :   LEFT_PAREN qualified_identifier RIGHT_PAREN ;
+
 field_list              :   identifier_list COLON type ;
+
+// TODO - Not sure I like this, it is consistent with the rest of the syntax, especially records.
+// enum_type               :   LEFT_PAREN ID (COMMA NL* ID)* RIGHT_PAREN NL* ;
+enum_type               :   ENUMERATION NL* base_type? NL*
+                                ID (COMMA NL* ID)* NL*
+                            END ENUMERATION
+                        ;
 
 // Objects.
 object_decl             :   identifier_list COLON MUTABLE? type ASSIGNMENT expr_list;
