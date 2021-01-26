@@ -118,11 +118,6 @@ UNTIL           :   'until' ;
 WHEN            :   'when' ;
 WHILE           :   'while' ;
 
-INTEGER         :   'integer' ;
-REAL            :   'real' ;
-RUNE            :   'rune' ;
-STRING          :   'string' ;
-
 // Unused:
 RETURN          :   'return' ;
 MATRIX          :   'matrix' ;
