@@ -91,6 +91,7 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 AND             :   'and' ;
 ARRAY           :   'array' ;
 AS              :   'as' ;
+BLOCK           :   'block' ;
 BY              :   'by' ;
 CASE            :   'case' ;
 DIV             :   'div' ;
