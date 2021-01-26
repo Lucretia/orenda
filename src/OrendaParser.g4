@@ -29,7 +29,7 @@ main_function_decl      :   function_decl ;
 
 // TODO - This enables nested functions, do we want them to allow receivers?
 function_decl           :   FUNCTION receiver? ID formal_params? IS NL*
-                                (declarations NL*)*
+                                (declarations | statements NL*)*
                             END ID NL*
                         ;
 
