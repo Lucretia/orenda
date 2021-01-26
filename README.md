@@ -74,7 +74,7 @@ $ cmake -DANTLR_EXECUTABLE=<location of your ANTLR4 jar>
 
 ## [Current version](http://www.semver.org)
 
-v0.0.109
+v0.0.110
 
 ## Contributions
 

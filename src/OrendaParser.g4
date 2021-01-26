@@ -42,7 +42,12 @@ receiver                :   LEFT_PAREN ID COLON ID RIGHT_PAREN ;
 
 type_decl               :   TYPE ID IS type ;
 
-type                    :   qualified_identifier ;
+type                    :   qualified_identifier
+                        |   array_type
+                        ;
+
+array_type              :   ARRAY (LEFT_BRACKET constant_expr (COMMA constant_expr)* RIGHT_BRACKET)? OF type
+                        ;
 
 // Objects.
 object_decl             :   identifier_list COLON MUTABLE? type ASSIGNMENT expr_list;

@@ -107,6 +107,7 @@ MOD             :   'mod' ;
 MODULE          :   'module' ;
 MUTABLE         :   'mutable' ;
 NOT             :   'not' ;
+OF              :   'of' ;
 OR              :   'or' ;
 OUT             :   'out' ;
 THEN            :   'then' ;
