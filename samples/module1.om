@@ -21,4 +21,14 @@ unsafe module Module1 is
          20] of natural
 
     type g is array of bananas
+
+    type h is record
+        a : h
+        b : g
+    end
+
+    type i is record (h)
+        z : v
+        y : m
+    end
 end Module1
