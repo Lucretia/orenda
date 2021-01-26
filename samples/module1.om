@@ -13,6 +13,19 @@ unsafe module Module1 is
                                    ) is
 
         function internal is
+            while a < 3 loop
+            end loop
+
+            // Comment out the next 3 lines to become a generalised loop.
+            for n in 1 .. 4
+              reverse
+              by 2
+            loop
+            end loop
+
+            loop
+                exit when a = 2
+            end loop
         end internal
     end do_something
 
