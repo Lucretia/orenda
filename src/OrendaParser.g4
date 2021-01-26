@@ -29,7 +29,7 @@ main_function_decl      :   function_decl ;
 
 // TODO - This enables nested functions, do we want them to allow receivers?
 function_decl           :   FUNCTION receiver? ID formal_params? IS NL*
-                                (declarations | statements NL*)*
+                                (declarations NL* | statements NL*)*
                             END ID NL*
                         ;
 
@@ -101,7 +101,7 @@ case_options            :   WHEN (case_labels (COMMA case_labels)* RIGHT_ARROW
 case_labels             :   constant_expr (DIARESIS constant_expr)? ;
 
 loop_stmt               :   loop_scheme? LOOP NL*
-                                (declarations | statements NL*)*
+                                (declarations NL* | statements NL*)*
                             END LOOP
                         ;
 
