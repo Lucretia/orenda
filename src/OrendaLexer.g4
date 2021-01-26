@@ -110,6 +110,7 @@ NOT             :   'not' ;
 OF              :   'of' ;
 OR              :   'or' ;
 OUT             :   'out' ;
+RECORD          :   'record' ;
 THEN            :   'then' ;
 TYPE            :   'type' ;
 UNSAFE          :   'unsafe' ;

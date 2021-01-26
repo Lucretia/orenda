@@ -44,10 +44,18 @@ type_decl               :   TYPE ID IS type ;
 
 type                    :   qualified_identifier
                         |   array_type
+                        |   record_type
                         ;
 
-array_type              :   ARRAY (LEFT_BRACKET constant_expr (COMMA constant_expr)* RIGHT_BRACKET)? OF type
+array_type              :   ARRAY NL* (LEFT_BRACKET NL* constant_expr (COMMA NL* constant_expr)* NL* RIGHT_BRACKET)? NL* OF type
                         ;
+
+record_type             :   RECORD NL* (LEFT_PAREN qualified_identifier RIGHT_PAREN)? NL*
+                                (field_list NL*)+
+                            END
+                        ;
+
+field_list              :   identifier_list COLON type ;
 
 // Objects.
 object_decl             :   identifier_list COLON MUTABLE? type ASSIGNMENT expr_list;
