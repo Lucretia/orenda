@@ -82,6 +82,14 @@ test.adb:2:19: base not 2-16
 gnatmake: "test.adb" compilation error
 ```
 
+Neither Ada nor ParaSail have keywords for base numeric types, i.e. ```Integer```, ```Float```, they are defined in the package ```Standard``` in Ada and defined in terms of the base language features. Both languages define literals to be of a ```Universal``` literal type, either ```Universal_Integer``` or ```Universal_Float```, of which all numeric (in their class, integer or real) types are compatible with.
+
+ Ada goes further by defining ```Character``` and ```String``` inside ```Standard``` also. Characters are an enumeration and Strings are an array of Characters. Ada String's are currently Latin 1.
+
+ParaSail goes further in defining ```Univ_Char/String<>``` which are module types.
+
+This seems to make sense where new numeric types can be defined and constrained, I cannot see any other way to handle this. These implicit types are the sets of all of their respective numbers, i.e. the set of all integers and all reals.
+
 # What have I gone for?
 
 In Orenda decimals can be specified with a base in Ada-like or a Cish-like manner.
