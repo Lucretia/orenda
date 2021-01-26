@@ -15,4 +15,10 @@ unsafe module Module1 is
         function internal is
         end internal
     end do_something
+
+    type f is array
+        [10,
+         20] of natural
+
+    type g is array of bananas
 end Module1
