@@ -69,9 +69,7 @@ statement               :   assignment_stmt
                         |   function_call_stmt
                         |   if_statement_stmt
                         |   case_stmt
-                        |   while_loop_stmt
-                        |   generalised_loop_stmt
-                        |   for_loop_stmt
+                        |   loop_stmt
                         |   exit_stmt
                         ;
 
@@ -102,22 +100,13 @@ case_options            :   WHEN (case_labels (COMMA case_labels)* RIGHT_ARROW
 
 case_labels             :   constant_expr (DIARESIS constant_expr)? ;
 
-while_loop_stmt         :   WHILE expression NL* LOOP NL*
+loop_stmt               :   loop_scheme? LOOP NL*
                                 (declarations | statements NL*)*
                             END LOOP
                         ;
 
-// TODO - Repeat loops can be implemented with an exit statement with an expression.
-// TODO - Remove in favour of a general loop syntax with an exit statement?
-generalised_loop_stmt   :   LOOP NL*
-                                (declarations | statements NL*)*
-                            END LOOP
-                        ;
-
-// TODO - Needs to be able to take general ranges and iterators.
-for_loop_stmt           :   FOR ID IN expression DIARESIS expression NL* REVERSE? NL* (BY constant_expr)? NL* LOOP NL*
-                                (declarations | statements NL*)*
-                            END LOOP
+loop_scheme             :   WHILE expression NL*
+                        |   FOR ID IN expression DIARESIS expression NL* REVERSE? NL* (BY constant_expr)? NL*
                         ;
 
 exit_stmt               :   EXIT WHEN expression NL* ;
