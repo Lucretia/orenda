@@ -89,6 +89,7 @@ UNICODE_POINT   :   [uU] HEX_NUMERAL;
 // Keywords.
 // Used:
 AND             :   'and' ;
+ARRAY           :   'array' ;
 AS              :   'as' ;
 BY              :   'by' ;
 CASE            :   'case' ;
@@ -122,7 +123,6 @@ WHILE           :   'while' ;
 RETURN          :   'return' ;
 MATRIX          :   'matrix' ;
 VECTOR          :   'vector' ;
-ARRAY           :   'array' ;
 LIST            :   'list' ;
 
 // Identifiers.
