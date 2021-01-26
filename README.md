@@ -82,7 +82,7 @@ I'm not accepting any PR's but I am happy to take advice, ideas or suggestions.
 
 ## Copyright
 
-Copyright (C) 2020 by Luke A. Guest
+Copyright (C) 2020-2021 by Luke A. Guest
 
 ## Licence
 
