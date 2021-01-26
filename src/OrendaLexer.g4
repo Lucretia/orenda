@@ -103,7 +103,9 @@ IF              :   'if' ;
 IMPORT          :   'import' ;
 IN              :   'in' ;
 IS              :   'is' ;
+LIST            :   'list' ;
 LOOP            :   'loop' ;
+MAP             :   'map' ;
 MOD             :   'mod' ;
 MODULE          :   'module' ;
 MUTABLE         :   'mutable' ;
@@ -123,7 +125,6 @@ WHILE           :   'while' ;
 RETURN          :   'return' ;
 MATRIX          :   'matrix' ;
 VECTOR          :   'vector' ;
-LIST            :   'list' ;
 
 // Identifiers.
 
