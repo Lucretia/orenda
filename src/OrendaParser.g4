@@ -36,6 +36,9 @@ function_decl           :   FUNCTION receiver? ID formal_params? IS NL*
 formal_params           :   LEFT_PAREN (NL* formal_parameter (COMMA NL* formal_parameter)* NL*)* RIGHT_PAREN
                                 (NL* COLON NL* qualified_identifier)* ;
 
+// TODO - This currently allows anonymous arrays, records and enums as types.
+//        Do I want this?
+//        What are the benefits.
 formal_parameter        :   ID (COMMA ID)* COLON (IN | IN OUT | OUT) type ;
 
 receiver                :   LEFT_PAREN ID COLON ID RIGHT_PAREN ;
