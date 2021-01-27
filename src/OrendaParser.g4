@@ -84,6 +84,7 @@ statement               :   assignment_stmt
                         |   case_stmt
                         |   loop_stmt
                         |   exit_stmt
+                        |   block_stmt // TODO - Only allowed inside a function!
                         ;
 
 assignment_stmt         :   designator NL* ASSIGNMENT expression ;
@@ -123,6 +124,11 @@ loop_scheme             :   WHILE expression NL*
                         ;
 
 exit_stmt               :   EXIT WHEN expression NL* ;
+
+block_stmt              :   BLOCK NL*
+                                (declarations NL* | statements NL*)*
+                            END BLOCK
+                        ;
 
 // Expressions.
 constant_expr           :   expression ;

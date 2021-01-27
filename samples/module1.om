@@ -54,4 +54,7 @@ unsafe module Module1 is
         z : v
         y : m
     end
+
+    block // TODO - Remove, not allowed here.
+    end block
 end Module1
