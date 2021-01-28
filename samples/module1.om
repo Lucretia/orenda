@@ -55,6 +55,9 @@ unsafe module Module1 is
         y : m
     end
 
-    block // TODO - Remove, not allowed here.
-    end block
+    //block // TODO - Remove, not allowed here.
+    //end block
+
+    unsafe function A is
+    end A
 end Module1
