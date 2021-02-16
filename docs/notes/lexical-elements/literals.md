@@ -16,7 +16,7 @@ C utilises quite a simplistic and not very consistent method to define literals,
 
 ## C++
 
-C is a superset of C, so it takes what C has and adds more. C++14 has added the ```0b``` prefix which makes it consistent with respect to hex literals. C++14 also added the apostrophe as a digit separator which I imagine would make creating a scanner even more difficult than it already is.
+C++ is a superset of C, so it takes what C has and adds more. C++14 has added the ```0b``` prefix which makes it consistent with respect to hex literals. C++14 also added the apostrophe as a digit separator which I imagine would make creating a scanner even more difficult than it already is.
 
 ## C#
 
