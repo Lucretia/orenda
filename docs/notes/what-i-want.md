@@ -11,6 +11,7 @@ I intend to use other languages as inspiration, but I do want something smaller 
 I want the following things:
 
 * A replacement for Ada, but adhering to the same principles.
+  * Model the domain, not the machine. i.e. the difference between the compiler handling the data sizes and the programmer having to specify a machine type, int32, in64, float, double, etc.
 * A **readable**, nice syntax. Wirthian in style, but not exactly his as I'm not a fan of his semi-colon and uppercase keyword usage. I will do what Ada did and make it a bit more consistent. I will also use other influences.
 * Like other people developing other languages, I want get pleasure from developing software again.
 * Small core language containing **orthogonal** concepts.
