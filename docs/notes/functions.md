@@ -2,6 +2,8 @@
 
 As I want a multi-paradigm language we need a way of specifying functions of various forms.
 
+Even [Scala 3](https://dotty.epfl.ch/docs/reference/other-new-features/indentation.html#the-end-marker) has seen the light on end markers and not braces.
+
 ## Imperative
 
 ```
