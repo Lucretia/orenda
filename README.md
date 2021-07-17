@@ -44,9 +44,10 @@ These are my notes / ramblings:
    * [Reference types](./docs/notes/type-system/reference-types.md)
    * [Reflection](./docs/notes/type-system/reflection.md)
 5. [Functions](./docs/notes/functions.md)
-6. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
-7. [Lexer Grammar](./src/ExperimentalLexer.g4)
-8. [Parser Grammar](./src/ExperimentalParser.g4)
+6. [Modules](./docs/notes/modules.md)
+8. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
+9. [Lexer Grammar](./src/ExperimentalLexer.g4)
+10. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
