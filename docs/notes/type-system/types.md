@@ -71,3 +71,8 @@ As mentioned in the arrays document, it would be useful to be able to specify SI
 * [Cone MM](https://pling.jondgoodwin.com/post/reference-lifecycle)
 * [Basil MM](https://www.reddit.com/r/ProgrammingLanguages/comments/gwn0r9/experimenting_with_memory_management_for_basil)
 * [Arena / region](https://en.wikipedia.org/wiki/Region-based_memory_management)
+
+## Unique types
+
+* Some types should only be used once, i.e. to define the type of a memory mapped register.
+* Is this a thing anywhere else?
