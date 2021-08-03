@@ -47,8 +47,9 @@ These are my notes / ramblings:
 6. [Modules](./docs/notes/modules.md)
 7. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
 8. [REPL](./docs/notes/repl.md)
-9. [Lexer Grammar](./src/ExperimentalLexer.g4)
-10. [Parser Grammar](./src/ExperimentalParser.g4)
+9. [Target Specifics](./docs/notes/target-spoecifics.md)
+10. [Lexer Grammar](./src/ExperimentalLexer.g4)
+11. [Parser Grammar](./src/ExperimentalParser.g4)
 
 ## TODO
 
