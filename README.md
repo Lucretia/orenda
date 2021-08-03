@@ -45,7 +45,8 @@ These are my notes / ramblings:
    * [Reflection](./docs/notes/type-system/reflection.md)
 5. [Functions](./docs/notes/functions.md)
 6. [Modules](./docs/notes/modules.md)
-8. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
+7. [Parallelism and concurrency](/docs/notes/parallelism-concurrency.md)
+8. [REPL](./docs/notes/repl.md)
 9. [Lexer Grammar](./src/ExperimentalLexer.g4)
 10. [Parser Grammar](./src/ExperimentalParser.g4)
 
