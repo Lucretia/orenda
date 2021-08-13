@@ -89,7 +89,7 @@ Learn some more programming languages to see what ideas are out there and to als
 + [ ] [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language)) (Procedural, stack-oriented, reflective, concatenative)
 + [ ] [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk) (Object-Oriented)
 + [ ] [Elixir](https://en.wikipedia.org/wiki/Elixir_(programming_language)) (Multi-paradigm: functional, concurrent, distributed, process-oriented)
-+ [ ] [Bondi](https://web.archive.org/web/20210321002117/http://bondi.it.uts.edu.au/) (Pattern matching)
++ [ ] [Bondi](https://web.archive.org/web/20210321002117/http://bondi.it.uts.edu.au/) (Functional, imperative, query-based and object-oriented)
 + [ ] [APL](https://en.wikipedia.org/wiki/APL_(programming_language)) (Array, functional, structured, modular)
 + [ ] [BQN](https://github.com/mlochbaum/BQN) (Array, functional)
 + [ ] [J](https://en.wikipedia.org/wiki/J_(programming_language)) (Array)
