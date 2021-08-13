@@ -54,6 +54,34 @@ These are my notes / ramblings:
 ## TODO
 
 * [X] Give this thing a name.
+* [ ] Learn some more programming languages to see what ideas are out there and to also see how they work in that particular language, in no particular order of importance or age:
+   + [ ] Modula-2
+   + [ ] Oberon
+   + [ ] Lisp
+   + [ ] Scheme
+   + [ ] S/ML
+   + [ ] OCaml
+   + [ ] Go
+   + [ ] Rust
+   + [ ] F#
+   + [ ] Odin
+   + [ ] Dart
+   + [ ] Swift
+   + [ ] Kotlin
+   + [ ] Elm
+   + [ ] Scala
+   + [ ] ParaSail
+   + [ ] Idris
+   + [ ] D
+   + [ ] Julia
+   + [ ] Haskell
+   + [ ] Prolog
+   + [ ] Mercury
+   + [ ] FORTH
+   + [ ] Smalltalk
+   + One set of languages only exist on an emulator, UAE, these are:
+     - [ ] AMOS
+     - [ ] AmigaE
 * [ ] Create an AST.
 * [ ] Add basic semantic analysis.
 * [ ] Convert to LLVM IR.
