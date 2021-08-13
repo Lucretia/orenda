@@ -54,37 +54,53 @@ These are my notes / ramblings:
 ## TODO
 
 * [X] Give this thing a name.
-* [ ] Learn some more programming languages to see what ideas are out there and to also see how they work in that particular language, in no particular order of importance or age:
-   + [ ] Modula-2
-   + [ ] Oberon
-   + [ ] Lisp
-   + [ ] Scheme
-   + [ ] S/ML
-   + [ ] OCaml
-   + [ ] Go
-   + [ ] Rust
-   + [ ] F#
-   + [ ] Odin
-   + [ ] Dart
-   + [ ] Swift
-   + [ ] Kotlin
-   + [ ] Elm
-   + [ ] Scala
-   + [ ] ParaSail
-   + [ ] Idris
-   + [ ] D
-   + [ ] Julia
-   + [ ] Haskell
-   + [ ] Prolog
-   + [ ] Mercury
-   + [ ] FORTH
-   + [ ] Smalltalk
-   + One set of languages only exist on an emulator, UAE, these are:
-     - [ ] AMOS
-     - [ ] AmigaE
 * [ ] Create an AST.
 * [ ] Add basic semantic analysis.
 * [ ] Convert to LLVM IR.
+
+### Languages to learn
+
+Learn some more programming languages to see what ideas are out there and to also see how they work in that particular language. The following list shows a good selection, but in no way should they all be learnt, only where something of importance can be learned.
+
++ [ ] [Modula-2](https://en.wikipedia.org/wiki/Modula-2) (Imperative, structured, modular, data and procedure hiding, concurrent)
++ [ ] [Modula-3](https://en.wikipedia.org/wiki/Modula-3) (Imperative, structured, procedural, modular, concurrent)
++ [ ] [Oberon](https://en.wikipedia.org/wiki/Oberon_(programming_language)) (Imperative, structured, modular, object-oriented)
++ [ ] [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) (Multi-paradigm: functional, procedural, reflective, meta)
++ [ ] [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)) (Multi-paradigm: functional, imperative, meta)
++ [ ] [S/ML](https://en.wikipedia.org/wiki/Standard_ML) (Multi-paradigm: functional, imperative, modular)
++ [ ] [OCaml](https://en.wikipedia.org/wiki/OCaml) (Multi-paradigm: functional, imperative, modular, object-oriented)
++ [ ] [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) (Multi-paradigm: concurrent, functional, imperative, object-oriented)
++ [ ] [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) (Multi-paradigm: concurrent, functional, generic, imperative, structured)
++ [ ] [F#](https://en.wikipedia.org/wiki/F_Sharp_(programming_language)) (Multi-paradigm: functional, imperative, object-oriented, metaprogramming, reflective, concurrent)
++ [ ] [Odin](https://odin-lang.org/) (Imperative)
++ [ ] [Dart](https://en.wikipedia.org/wiki/Dart_(programming_language)) (Multi-paradigm: functional, imperative, object-oriented, reflective)
++ [ ] [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)) (Multi-paradigm: protocol-oriented, object-oriented, functional, imperative, block structured, declarative)
++ [ ] [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) (Multi-paradigm: object-oriented, functional, imperative, block structured, declarative, generic, reflective, concurrent)
++ [ ] [Elm](https://en.wikipedia.org/wiki/Elm_(programming_language)) (Functional)
++ [ ] [Scala](https://en.wikipedia.org/wiki/Scala_(programming_language)) (Multi-paradigm: concurrent, functional, imperative, object-oriented)
++ [ ] [ParaSail](https://en.wikipedia.org/wiki/ParaSail_(programming_language)) (Compiled, concurrent, imperative, structured, object-oriented)
++ [ ] [Idris](https://en.wikipedia.org/wiki/Idris_(programming_language)) (Functional)
++ [ ] [D](https://en.wikipedia.org/wiki/D_(programming_language)) (Multi-paradigm: functional, imperative, object-oriented)
++ [ ] [Nim](https://en.wikipedia.org/wiki/Nim_(programming_language)) (Multi-paradigm: compiled, concurrent, Procedural, Imperative, Functional, Object-oriented)
++ [ ] [Julia](https://en.wikipedia.org/wiki/Julia_(programming_language)) (Multi-paradigm: multiple dispatch (primary paradigm), procedural, functional, meta, multistaged)
++ [ ] [Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language)) (Purely functional)
++ [ ] [Prolog](https://en.wikipedia.org/wiki/Prolog) (Logic)
++ [ ] [Mercury](https://en.wikipedia.org/wiki/Mercury_(programming_language)) (Logic, functional, object-oriented)
++ [ ] [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language)) (Procedural, stack-oriented, reflective, concatenative)
++ [ ] [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk) (Object-Oriented)
++ [ ] [Elixir](https://en.wikipedia.org/wiki/Elixir_(programming_language)) (Multi-paradigm: functional, concurrent, distributed, process-oriented)
++ [ ] [Bondi](https://web.archive.org/web/20210321002117/http://bondi.it.uts.edu.au/) (Pattern matching)
++ [ ] [APL](https://en.wikipedia.org/wiki/APL_(programming_language)) (Array, functional, structured, modular)
++ [ ] [BQN](https://github.com/mlochbaum/BQN) (Array, functional)
++ [ ] [J](https://en.wikipedia.org/wiki/J_(programming_language)) (Array)
++ [ ] [Joy](https://en.wikipedia.org/wiki/Joy_(programming_language)) (Multi-paradigm: functional, concatenative, stack-oriented)
++ [ ] [Zig](https://en.wikipedia.org/wiki/Zig_(programming_language)) (Multi-paradigm: imperative, concurrent, procedural, functional)
++ [ ] [Rebol](https://en.wikipedia.org/wiki/Rebol) (Language oriented programming, data exchange, functional, prototype-based, imperative)
+  - [ ] [Red](https://en.wikipedia.org/wiki/Red_(programming_language)) (imperative, functional, symbolic)
++ [ ] [Io](https://en.wikipedia.org/wiki/Io_(programming_language)) (Object-oriented prototype-based)
++ One set of languages only exist on an emulator, UAE, these are:
+   - [ ] [AMOS](https://en.wikipedia.org/wiki/AMOS_(programming_language)) (Imperative, Procedural)
+   - [ ] [AmigaE](https://en.wikipedia.org/wiki/Amiga_E) (Structured, modular, Imperative, Object-Oriented, List Processing)
 
 ## Building
 
