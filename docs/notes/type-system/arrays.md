@@ -1,8 +1,8 @@
 # Arrays
 
-Arrays are on the simplest data structures around and is usually built into the language, S/ML has lists rather than arrays, but they can be used in similar ways there.
+Arrays are one of the simplest data structures around and is usually built into the language, S/ML has lists rather than arrays, but they can be used in similar ways there.
 
-The majority of languages all implement the starting index as zero rather than allowing the developer to model the data type required for the domain. Ada manages this with the concept of an index type, this allows arrays to be indexed using any scalar type and therefore can start from any value, even enumerations. This should be retained as anything else is just lacking. I don't understand why nobody else has implemented this in a language, it's *so powerful*.
+The majority of languages all implement the starting index as zero rather than allowing the developer to model the data type required for the domain. Ada manages this with the concept of an index type, this allows arrays to be indexed using any scalar type and therefore can start from any value, even enumerations which includes character's. This should be retained as anything else is just lacking. I don't understand why nobody else has implemented this in a language, it's *so powerful*.
 
 ```orenda
 a : array [x .. y, w .. z, ...] of type
