@@ -14,6 +14,9 @@ a : [x .. y, w .. z, ...] type
 
 Where each range expressions (i.e. ```a .. b```) are of the same type.
 
+I definitely think it's worth implementing arrays such that they can compete with [Fortran](https://www.moreisdifferent.com/2015/07/16/why-physicsts-still-use-fortran).
+  * Should the arrays be row-major? What are the benefits here?
+
 ## Dynamic arrays
 
 One of the biggest issues with Ada is the fact that there are no real dynamic arrays, it's a static language of course, but it can be a pain to handle. You can create new declare blocks easily enough and create a new array there, so that's a workaround.
