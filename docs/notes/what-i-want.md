@@ -82,6 +82,11 @@ I want the following things:
 * I disagree with this new one loop only fad.
   * I certainly don't want to incorporate C's terrible for loop "design."
 * I considered a swap operator ```<=>``` which would be nice and short, Odin does this with ```a, b = b, a;``` due to be able to handle multiple variables at a time.
+  * a <=> b
+  * a, b <=> b, a
+  * c, a, b <=> b, c, a
+  * etc.
+    * To be able to overload this operator, the language would need to be able to handle variable argument lists built into the language to be able to handle multiple return types.
 * A new language needs a set of containers, it's just whether they should be part of the language as keywords/syntax or as external libraries in the runtime:
   * Arrays.
   * Maps / Dictionaries.
