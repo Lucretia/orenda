@@ -25,6 +25,11 @@ After finally watching [Guy Steele's Growing a language](https://youtu.be/_ahvzD
 * Small.
 * Composable.
 * Make programming life easier.
+* Opt out of safety features.
+* Opt into unsafe or performance negative features, i.e. GC.
+* Is it possible to create this new language with zero cost abstractions?
+  * What about returning objects? What makes Ada so different that it requires the secondary stack? OberonX added the ability to return objects of any type, how did they do it? Cannot find the doc.
+
 ## Documentation
 
 These are my notes / ramblings:
