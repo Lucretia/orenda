@@ -67,6 +67,7 @@ I want the following things:
 * Error handling:
   * Exceptions?
   * Multiple return values?
+  * WTF is naked return?? (Odin/Go?)
 * More flexible ranges? ```[]```, ```(]```. ```[)```, etc.
 * Multi-paradigm.
 * Metaprogramming:
@@ -104,6 +105,17 @@ Autocompletion in an editor can alleviate the typing for the lazy.
 * [No operator precedence in Fortress](https://youtu.be/hUQKaTH9TMo?t=13740)
   - From same talk about 4:00:00, "pushing past language type systems to prove safety"
 * JDK 16 RNG
+
+### Language library as a database
+
+I considered this to be a dead idea from Ada83 and not a good one until was I informed that having the library in a database could make for a development environment where you can be constantly running with minimal compiles. He likened it to Lisp and Smalltalk development.
+
+I had been thinking about how to have a toolchain which could be built into running applications.
+
+> working with a live system all the time, change and tweak while it is running
+>
+> -- <cite>David Botton</cite>
+
 
 ## References
 
