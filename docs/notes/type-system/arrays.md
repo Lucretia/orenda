@@ -113,3 +113,14 @@ If the matrix is implemented as a variant record of a matrix as above and a sing
 ## SIMD
 
 A new language can build in SIMD operations into the array handling.
+
+## Ragged arrays
+
+* [Stan](https://mc-stan.org/docs/2_21/stan-users-guide/ragged-data-structs-section.html)
+
+```orenda
+a : array [x .. y, w, z] of type
+```
+
+Define a ragged array of ```x .. y```, ```x .. w```, ```x .. z```, in reality it is a one dimensional array of ```x .. y + w + z``` with another array containing sizes.
+
