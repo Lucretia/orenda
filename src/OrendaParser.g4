@@ -136,8 +136,10 @@ constant_expr           :   expression ;
 expression              :   NL* simple_expr (relation simple_expr)* ;
 
 simple_expr             :   NL* (PLUS | MINUS)? term (add_op term)* ;
+// simple_expr             :   NL* term (add_op term)* ;
 
 term                    :   NL* factor (mul_op factor)* ;
+// term                    :   NL* (PLUS | MINUS)? factor (mul_op factor)* ;
 
 factor                  :   designator (LEFT_PAREN expr_list? RIGHT_PAREN)?
                         |   INTEGER_LITERAL
@@ -181,7 +183,7 @@ mul_op                  :   TIMES
                         ;
 
 designator              :   qualified_identifier (DOT ID
-                                                 | LEFT_BRACKET expr_list RIGHT_BRACKET
-                                                 | LEFT_PAREN qualified_identifier RIGHT_PAREN)* ;
+                        | LEFT_BRACKET expr_list RIGHT_BRACKET
+                        | LEFT_PAREN qualified_identifier RIGHT_PAREN)* ;
 
 expr_list               :   expression (COMMA expression)* ;
