@@ -67,6 +67,7 @@ These are my notes / ramblings:
 
 Learn some more programming languages to see what ideas are out there and to also see how they work in that particular language. The following list shows a good selection, but in no way should they all be learnt, only where something of importance can be learned.
 
+* [X] [Python](./docs/languages/python.md) (Imperative, functional, object-oriented)
 + [ ] [Modula-2](https://en.wikipedia.org/wiki/Modula-2) (Imperative, structured, modular, data and procedure hiding, concurrent)
 + [ ] [Modula-3](https://en.wikipedia.org/wiki/Modula-3) (Imperative, structured, procedural, modular, concurrent)
 + [ ] [Oberon](https://en.wikipedia.org/wiki/Oberon_(programming_language)) (Imperative, structured, modular, object-oriented)
