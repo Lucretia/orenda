@@ -6,6 +6,7 @@
 > -- <cite>[Dictionary.com](https://www.dictionary.com/browse/orenda?s=t)</cite>
 
 * Maybe rename to Titania, following Oberon?
+* Create a new repo for this?
 
 This is my attempt at creating a new programming language a bit at a time by experimenting with various ideas.
 
