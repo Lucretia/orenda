@@ -5,6 +5,8 @@
 >
 > -- <cite>[Dictionary.com](https://www.dictionary.com/browse/orenda?s=t)</cite>
 
+* Maybe rename to Titania, following Oberon?
+
 This is my attempt at creating a new programming language a bit at a time by experimenting with various ideas.
 
 **N.B:** Nothing in this language is set in stone right now, it **is** likely to change.
