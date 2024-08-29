@@ -5,7 +5,7 @@
 >
 > -- <cite>[Dictionary.com](https://www.dictionary.com/browse/orenda?s=t)</cite>
 
-* Maybe rename to Titania, following Oberon?
+* Maybe rename to Titania (Pronouned [/tɪˈteɪnjə/](http://ipa-reader.xyz/?text=t%C9%AA%CB%88te%C9%AAnj%C9%99)), following Oberon?
 * Create a new repo for this?
 
 This is my attempt at creating a new programming language a bit at a time by experimenting with various ideas.
